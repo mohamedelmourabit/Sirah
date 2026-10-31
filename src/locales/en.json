@@ -1,0 +1,200 @@
+{
+  "app": {
+    "title": "The Prophetic Biography",
+    "tagline": "A journey through time and personalities",
+    "slogan": "The Sīra … our history, our identity"
+  },
+  "nav": {
+    "label": "Navigation",
+    "home": "Home",
+    "timeline": "Timeline",
+    "map": "Relationship map",
+    "people": "Companions",
+    "events": "Events",
+    "places": "Places",
+    "sources": "Sources",
+    "browse": "Browse"
+  },
+  "progress": {
+    "yours": "Your progress",
+    "count": "{{n}} / {{total}} viewed",
+    "new": "New",
+    "viewed": "Viewed"
+  },
+  "search": {
+    "placeholder": "Search for a companion, event or place...",
+    "aria": "Global search",
+    "empty": "No results",
+    "clear": "Clear search",
+    "noResults": "No results found",
+    "noResultsHint": "Try another spelling, a shorter word, or the Arabic name (e.g. عمر, Omar, Umar).",
+    "didYouMean": "Did you mean:",
+    "alsoKnown": "Also known as: {{name}}",
+    "count_one": "{{count}} result",
+    "count_other": "{{count}} results",
+    "hint": "↑↓ navigate · Enter open · Esc close"
+  },
+  "account": {
+    "browse": "Browse without an account",
+    "title": "Optional account",
+    "desc": "An account is only for syncing your progress across devices. All content is available without one.",
+    "off": "Sync is not enabled. Add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY to the .env file.",
+    "signedAs": "Signed in as:",
+    "signOut": "Sign out",
+    "email": "Your email address",
+    "send": "Send sign-in link",
+    "sent": "The sign-in link was sent to your email.",
+    "continue": "Continue without an account"
+  },
+  "map": {
+    "aria": "Interactive relationship map",
+    "canvas": "Relationship map",
+    "center": "Muhammad ﷺ",
+    "discoverTitle": "Discover the Sīra",
+    "discoverText": "Explore events and companions through the circular map. Click any node.",
+    "hint": "Drag to pan · mouse wheel to zoom",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "fit": "Fit to view",
+    "filter": "Filters",
+    "events": "Events",
+    "people": "Companions",
+    "places": "Places",
+    "relations": "Relations",
+    "periods": "Main periods",
+    "all": "All",
+    "zoomHint": "Zoom in to reveal every label; select a circle to see its direct relations."
+  },
+  "kinds": {
+    "person": "Companion / figure",
+    "event": "Event",
+    "place": "Place",
+    "group": "Group"
+  },
+  "periods": {
+    "pre": "Before the revelation",
+    "mecca": "Meccan period",
+    "hijra": "The Hijra",
+    "medina": "Medinan period"
+  },
+  "timeline": {
+    "title": "Timeline",
+    "viewAll": "View all →"
+  },
+  "directory": {
+    "placeholder": "Search by name or keyword...",
+    "aria": "Search",
+    "results_one": "{{count}} result",
+    "results_other": "{{count}} results",
+    "all": "All"
+  },
+  "detail": {
+    "close": "Close",
+    "bio": "Biography",
+    "context": "Historical context",
+    "sources": "Sources",
+    "related": "Related",
+    "showMap": "Show on map",
+    "showTimeline": "In the timeline"
+  },
+  "sourcesPage": {
+    "legend": "Historical verification status is separate from translation status. The four statuses:"
+  },
+  "features": [
+    {
+      "icon": "🗺",
+      "title": "Interactive map",
+      "desc": "Explore events and companions through circles and relationships."
+    },
+    {
+      "icon": "📅",
+      "title": "Complete timeline",
+      "desc": "From before the revelation to the death of the Prophet ﷺ, with the key events."
+    },
+    {
+      "icon": "🔎",
+      "title": "Advanced search",
+      "desc": "Across companions, events, places and sources."
+    },
+    {
+      "icon": "👤",
+      "title": "No account needed",
+      "desc": "Browse right away, with complete freedom."
+    },
+    {
+      "icon": "🔒",
+      "title": "Optional account",
+      "desc": "To save your progress and sync it across devices."
+    }
+  ],
+  "lang": {
+    "label": "Language"
+  },
+  "verification": {
+    "title": "Historical verification",
+    "reviewedBy": "Reviewed by {{by}} · {{at}}",
+    "diffNote": "Note on differing accounts",
+    "diffNoteHint": "A note found in the data; not yet reviewed.",
+    "VERIFIED": {
+      "label": "Verified",
+      "desc": "Supported by reviewed and reliable sources."
+    },
+    "DISPUTED": {
+      "label": "Disputed",
+      "desc": "Historical accounts or scholarly opinions differ."
+    },
+    "UNCERTAIN": {
+      "label": "Uncertain",
+      "desc": "Insufficient evidence to establish the claim."
+    },
+    "PENDING_REVIEW": {
+      "label": "Pending review",
+      "desc": "Not yet reviewed by a qualified reviewer; do not treat as verified."
+    },
+    "refs": "Supporting references"
+  },
+  "tr": {
+    "pillOriginal": "Original Arabic text",
+    "pillApproved": "Approved translation",
+    "pillDraft": "Draft – Pending Review",
+    "pillPending": "Original Arabic text – no approved translation",
+    "reviewedBy": "Translation reviewed by {{by}} · {{at}}",
+    "draftNote": "Draft translation, not yet reviewed; the Arabic original remains the reference.",
+    "viewOriginal": "View original Arabic text",
+    "viewTranslation": "View translation",
+    "tagAr": "AR",
+    "tagDraft": "Draft",
+    "bar": "{{n}} of {{total}} entries have an approved translation. For the others, the original Arabic text is shown.",
+    "barDraft": "Previewing draft translations – Draft – Pending Review. Not reviewed; the Arabic original remains the reference.",
+    "preview": "Preview draft translations",
+    "back": "Back to original Arabic"
+  },
+  "cat": {
+    "person": "Companions and figures",
+    "event": "Events",
+    "place": "Places",
+    "period": "Historical periods"
+  },
+  "view": {
+    "label": "Display mode",
+    "map": "Relationship map",
+    "list": "List view"
+  },
+  "browse": {
+    "sort": "Sort",
+    "sortChrono": "Chronological",
+    "sortName": "Name",
+    "sortUnread": "New first",
+    "sortVerification": "Verification status",
+    "reading": "Reading",
+    "verification": "Verification",
+    "period": "Period",
+    "type": "Type",
+    "all": "All",
+    "entries_one": "{{count}} entry",
+    "entries_other": "{{count}} entries",
+    "empty": "No entries match these filters.",
+    "reset": "Reset filters",
+    "showPeriod": "Show entries from this period"
+  }
+}

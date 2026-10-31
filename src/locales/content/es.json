@@ -1,0 +1,613 @@
+{
+ "books": {
+  "صحيح البخاري": "Sahih al-Bujari",
+  "السيرة النبوية — ابن هشام": "La Biografía profética — Ibn Hishām",
+  "البداية والنهاية — ابن كثير": "El Principio y el Fin — Ibn Kazīr",
+  "صحيح مسلم": "Sahih Muslim",
+  "القرآن الكريم": "El Noble Corán",
+  "الرحيق المختوم — المباركفوري": "El Néctar sellado — al-Mubārakfūrī",
+  "الطبقات الكبرى — ابن سعد": "Las Grandes Generaciones — Ibn Saʿd",
+  "تاريخ الرسل والملوك — الطبري": "Historia de los Mensajeros y los Reyes — al-Ṭabarī",
+  "الإصابة في تمييز الصحابة — ابن حجر": "al-Iṣāba fī Tamyīz al-Ṣaḥāba — Ibn Ḥajar"
+ },
+ "entities": {
+  "muhammad": {
+   "name": "El Profeta Muhammad ﷺ",
+   "when": "570 – 632",
+   "summary": "Sello de los profetas y mensajeros, Muhammad ibn ʿAbd Allāh ibn ʿAbd al-Muṭṭalib, de los Banū Hāshim, de Quraysh.",
+   "bio": "Nació en La Meca en el Año del Elefante y creció huérfano; entre su gente era conocido como el Veraz, el Digno de confianza. Fue enviado a los cuarenta años, llamó a la unicidad de Dios durante veintitrés años y luego murió en Medina al-Munawwara.",
+   "context": "Vivió en un entorno tribal de la península arábiga dominado por la idolatría; su mensaje trajo el monoteísmo y la construcción de una sociedad nueva basada en la justicia y la fraternidad.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "companions": {
+   "name": "Los Compañeros",
+   "when": "610 – 632",
+   "summary": "Quienes conocieron al Profeta ﷺ creyendo en él y murieron en esa fe.",
+   "bio": "Definición de Compañero según la mayoría de los especialistas en hadices: quien conoció al Profeta ﷺ creyendo en él y murió musulmán. Llevaron el mensaje, transmitieron la Sunna y fundaron el Estado tras él.",
+   "context": "Se dividen en varios rangos: los primeros creyentes, los emigrados a Abisinia, los de Badr, quienes prestaron el juramento de Ridwān y quienes abrazaron el islam el año de la Conquista.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "makkah": {
+   "name": "La Meca (al-Mukarrama)",
+   "when": "Nacimiento y crianza del Profeta ﷺ",
+   "summary": "Lugar de nacimiento del Profeta ﷺ, tierra de la revelación y sede de la noble Kaaba.",
+   "bio": "Ciudad en un valle sin cultivos en el Hiyaz, que alberga la Casa Sagrada; era un centro comercial y religioso dirigido por Quraysh.",
+   "context": "El Profeta ﷺ pasó allí cincuenta y tres años antes de la Hégira y la conquistó en 8 AH.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "madinah": {
+   "name": "Medina (al-Munawwara)",
+   "when": "Desde 622",
+   "summary": "Ciudad de la Hégira, capital del primer Estado islámico y lugar de sepultura del Profeta ﷺ.",
+   "bio": "Se llamaba Yazrib y la habitaban los Aws, los Jazray y tribus judías. Tras la Hégira, el Profeta ﷺ cambió su nombre por Ṭayba y al-Madīna.",
+   "context": "Alberga la Mezquita del Profeta; de ella partieron las expediciones y en ella se construyó la comunidad musulmana.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "hira": {
+   "name": "La cueva de Hira",
+   "when": "Jabal al-Nur – La Meca",
+   "summary": "La cueva donde el Profeta ﷺ se retiraba a adorar y donde descendió la primera revelación.",
+   "bio": "Pequeña cueva en el Jabal al-Nūr, a unas tres millas de La Meca, donde el Profeta ﷺ se retiraba a adorar durante un número de noches.",
+   "context": "En ella se revelaron los primeros versículos de la sura al-ʿAlaq.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "kaaba": {
+   "name": "La noble Kaaba",
+   "when": "Quibla de los musulmanes",
+   "summary": "La Casa Sagrada cuyos cimientos levantaron Ibrahim e Ismaʿil, la paz sea con ellos.",
+   "bio": "Quraysh la reconstruyó unos cinco años antes de la misión; el Profeta ﷺ participó en ello y arbitró la colocación de la Piedra Negra.",
+   "context": "El Profeta ﷺ la purificó de ídolos el día de la Conquista de La Meca.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "taif": {
+   "name": "Taif",
+   "when": "Décimo año de la misión",
+   "summary": "La ciudad a la que el Profeta ﷺ acudió para llamar a su gente, que lo rechazó.",
+   "bio": "El Profeta ﷺ salió hacia ella con Zayd ibn Ḥāritha tras la muerte de Abū Ṭālib y de Jadīya; sus insensatos le hicieron daño y le arrojaron piedras.",
+   "context": "Se transmite en el Ṣaḥīḥ que Yibrīl le ofreció juntar sobre ellos las dos montañas, y él respondió: «Más bien espero que Dios haga salir de sus entrañas a quienes adoren a Dios solo».",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "habasha": {
+   "name": "Abisinia",
+   "when": "Dos emigraciones, 615 y 616",
+   "summary": "La tierra a la que emigraron los primeros musulmanes bajo la protección del justo Negus.",
+   "bio": "El Profeta ﷺ dijo a los musulmanes: «Allí hay un rey junto al cual nadie es oprimido». Permanecieron allí seguros en su religión.",
+   "context": "Entre los más destacados que emigraron allí estaban ʿUthmān ibn ʿAffān, su esposa Ruqayya y Jaʿfar ibn Abī Ṭālib.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "elephant": {
+   "name": "El Año del Elefante",
+   "when": "h. 570",
+   "summary": "El intento de Abraha el abisinio de destruir la Kaaba y la aniquilación de su ejército.",
+   "bio": "Abraha condujo hacia La Meca un ejército con elefantes, y Dios envió contra él bandadas de pájaros. En ese año nació el Profeta ﷺ.",
+   "context": "La sura al-Fīl lo menciona, y los árabes lo usaban para fechar los acontecimientos.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "birth": {
+   "name": "Nacimiento del Profeta ﷺ",
+   "when": "12 de Rabīʿ al-Awwal – Año del Elefante",
+   "summary": "El nacimiento de Muhammad ibn ʿAbd Allāh en La Meca, huérfano de padre.",
+   "disputed": "El día del mes es discutido: el más conocido es el 12 de Rabīʿ al-Awwal; también se mencionan el 2, el 8 o el 9. Los astrónomos contemporáneos prefieren el 9 de Rabīʿ al-Awwal.",
+   "bio": "Nació tras la muerte de su padre ʿAbd Allāh; lo tomaron a su cargo su abuelo ʿAbd al-Muṭṭalib y luego su tío Abū Ṭālib. Fue puesto a criar entre los Banū Saʿd, con Ḥalīma al-Saʿdiyya.",
+   "context": "Lo acordado es que nació un lunes, en el Año del Elefante.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "marriage": {
+   "name": "Matrimonio con Jadīya",
+   "when": "h. 595",
+   "summary": "El matrimonio del Profeta ﷺ con Jadīya bint Juwaylid cuando tenía veinticinco años.",
+   "disputed": "La edad de Jadīya al casarse: la opinión más conocida es cuarenta años; se mencionan otras.",
+   "bio": "El Profeta ﷺ trabajó en el comercio de ella hacia al-Shām; ella vio su honradez y le propuso matrimonio. Le dio sus hijos, salvo Ibrāhīm.",
+   "context": "Fue la primera en creer en él y su apoyo en los años más duros de la llamada.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "revelation": {
+   "name": "La Revelación",
+   "when": "Ramadán – h. 610",
+   "summary": "Yibrīl trajo los primeros versículos del Corán en la cueva de Hira: «Lee en el nombre de tu Señor que creó».",
+   "disputed": "El día de la primera revelación en Ramadán es discutido (17, 21 o 24); para muchos lo más probable es la Noche del Destino.",
+   "bio": "El Profeta ﷺ tenía cuarenta años cuando vino Yibrīl, lo abrazó y le dijo: «Lee». Volvió junto a Jadīya con el corazón tembloroso; ella lo tranquilizó y lo llevó ante Waraqa ibn Nawfal.",
+   "context": "Luego la revelación se interrumpió durante un tiempo y se reveló la sura al-Muddaththir con la orden de advertir.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "dawah": {
+   "name": "La predicación pública",
+   "when": "h. 613",
+   "summary": "Tras tres años de predicación en secreto, Dios ordenó a Su Profeta proclamar el mensaje abiertamente.",
+   "bio": "El Profeta ﷺ subió al monte al-Ṣafā y llamó a Quraysh, y se reveló la palabra del Altísimo (en su sentido): «Y advierte a tus parientes más cercanos».",
+   "context": "Después de eso se intensificó el daño que los politeístas causaban a los musulmanes.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "habasha_hijra": {
+   "name": "La emigración a Abisinia",
+   "when": "Quinto año de la misión",
+   "summary": "Los musulmanes huyeron con su fe de la persecución de Quraysh hacia el Negus.",
+   "bio": "Partió el primer grupo, de unos doce hombres y cuatro mujeres, y luego los siguieron grupos mayores. Quraysh envió una delegación al Negus, que la rechazó.",
+   "context": "Los libros de biografías conservaron el diálogo entre Jaʿfar ibn Abī Ṭālib y el Negus.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "sorrow": {
+   "name": "El Año de la Tristeza",
+   "when": "Décimo año de la misión – 619",
+   "summary": "La muerte de Abū Ṭālib y luego de Jadīya, y la salida del Profeta ﷺ hacia Taif.",
+   "bio": "El Profeta ﷺ perdió a su protector y a su esposa en poco tiempo, y se agravó el daño que le hacía Quraysh.",
+   "context": "Los biógrafos le dieron ese nombre.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "isra": {
+   "name": "El Viaje Nocturno y la Ascensión",
+   "when": "Antes de la Hégira",
+   "summary": "El viaje nocturno del Profeta ﷺ desde la Mezquita Sagrada hasta al-Aqṣā y su ascenso a través de los cielos.",
+   "disputed": "Que el viaje tuvo lugar es seguro, pero su fecha es discutida; ninguna prueba sólida respalda la conocida noche del 27 de Rajab.",
+   "bio": "En él se prescribieron las cinco oraciones, y el Profeta ﷺ vio algunos de los mayores signos de su Señor.",
+   "context": "El Corán lo menciona al comienzo de la sura al-Isrāʾ y en la sura al-Najm.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "aqaba": {
+   "name": "Los dos juramentos de al-ʿAqaba",
+   "when": "621 – 622",
+   "summary": "Una delegación de los Ansār juró apoyar y proteger al Profeta ﷺ como protegen a sus mujeres e hijos.",
+   "bio": "En la primera ʿAqaba juraron doce, y en la segunda setenta y tres hombres y dos mujeres. El Profeta ﷺ envió a Muṣʿab ibn ʿUmayr como maestro.",
+   "context": "Preparó directamente la Hégira a Medina.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "hijra": {
+   "name": "La Hégira a Medina",
+   "when": "1 AH – 622",
+   "summary": "El Profeta ﷺ se trasladó con Abū Bakr de La Meca a Medina: comienzo del calendario hegírico.",
+   "bio": "Salieron de noche y se ocultaron en la cueva de Zawr durante tres días; luego viajaron con un guía hasta Qubāʾ y después Medina. Su gente lo recibió con alegría.",
+   "context": "Se usó para fechar en tiempos de ʿUmar ibn al-Jaṭṭāb, que Dios esté complacido con él.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "madina_state": {
+   "name": "La construcción del Estado islámico",
+   "when": "1 AH – 622/623",
+   "summary": "Construcción de la Mezquita del Profeta, hermandad entre Muhājirūn y Ansār y redacción de la Carta de Medina.",
+   "disputed": "La Carta es transmitida por Ibn Isḥāq y otros, pero su redacción y su reunión en un solo documento son objeto de debate entre los investigadores.",
+   "bio": "El Profeta ﷺ comenzó construyendo la mezquita, luego estableció la hermandad entre los Muhājirūn y los Ansār, y reguló las relaciones entre los habitantes de Medina mediante un documento conocido como la Ṣaḥīfa (Carta) de Medina.",
+   "context": "Estos pasos formaron el núcleo de la comunidad y del Estado.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "badr": {
+   "name": "La batalla de Badr",
+   "when": "17 de Ramadán 2 AH – 624",
+   "summary": "Primera batalla decisiva entre los musulmanes y Quraysh, ganada por los musulmanes.",
+   "bio": "El Profeta ﷺ salió con unos trescientos trece hombres y se enfrentaron a unos mil de Quraysh; Dios les dio la victoria a pesar de su escaso número y equipo.",
+   "context": "El Corán lo llamó el Día del Criterio (Yawm al-Furqān).",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "uhud": {
+   "name": "La batalla de Uhud",
+   "when": "Shawwāl 3 AH – 625",
+   "summary": "Batalla junto al monte Uhud en la que murieron mártires Hamza y varios Compañeros.",
+   "bio": "Comenzó con una victoria de los musulmanes; luego los arqueros desobedecieron la orden del Profeta ﷺ y Jālid ibn al-Walīd rodeó con la caballería de Quraysh.",
+   "context": "La sura Āl ʿImrān habla de ella.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "khandaq": {
+   "name": "La batalla del Foso",
+   "when": "Shawwāl 5 AH – 627",
+   "summary": "Los coaligados sitiaron Medina; el foso se cavó por consejo de Salmān al-Fārisī.",
+   "bio": "Los coaligados sitiaron Medina durante cerca de un mes, y Dios envió contra ellos un viento y soldados, y se marcharon decepcionados.",
+   "context": "Se revelaron sobre ella versículos de la sura al-Aḥzāb.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "hudaybiyyah": {
+   "name": "El tratado de al-Hudaybiya",
+   "when": "Dhū al-Qaʿda 6 AH – 628",
+   "summary": "Tratado entre el Profeta ﷺ y Quraysh para detener la guerra durante diez años.",
+   "bio": "El Profeta ﷺ salió con la intención de hacer la ʿumra y Quraysh se lo impidió; acordaron una tregua con la condición de que volviera al año siguiente. El tratado pareció pesado a algunos Compañeros, pero Dios lo llamó una victoria.",
+   "context": "Le siguió el juramento de Ridwān bajo el árbol.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "fath": {
+   "name": "La conquista de La Meca",
+   "when": "Ramadán 8 AH – 630",
+   "summary": "El Profeta ﷺ entró en La Meca con diez mil Compañeros y purificó la Kaaba de ídolos.",
+   "bio": "Quraysh rompió el tratado, y el Profeta ﷺ marchó contra ella; entró con humildad y perdonó a su gente, diciendo: «Id, que sois los liberados».",
+   "context": "Después, la gente entró en la religión de Dios en masa.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "farewell": {
+   "name": "La Peregrinación de Despedida",
+   "when": "10 AH – 632",
+   "summary": "La única peregrinación del Profeta ﷺ, en la que pronunció el gran sermón de ʿArafa.",
+   "bio": "Pronunció en ʿArafa un sermón que afirmaba la inviolabilidad de la sangre y de los bienes y los derechos de las mujeres, y se reveló la palabra del Altísimo (en su sentido): «Hoy os he perfeccionado vuestra religión».",
+   "context": "Estaban con él más de cien mil Compañeros.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "death": {
+   "name": "Muerte del Profeta ﷺ",
+   "when": "Rabīʿ al-Awwal 11 AH – 632",
+   "summary": "El Profeta ﷺ partió hacia el Compañero Supremo en Medina, a los sesenta y tres años.",
+   "disputed": "La opinión más extendida es que murió el lunes 12 de Rabīʿ al-Awwal; también se menciona el 2 de Rabīʿ al-Awwal.",
+   "bio": "Estuvo enfermo varios días y ordenó a Abū Bakr que dirigiera la oración de la gente; murió en la casa de ʿĀʾisha, que Dios esté complacido con ella, y fue enterrado en ella.",
+   "context": "Abū Bakr asumió el califato después de él.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "khadija": {
+   "name": "Jadīya bint Juwaylid",
+   "when": "m. 619",
+   "summary": "Primera Madre de los creyentes y primera en creer en el Profeta ﷺ.",
+   "bio": "Comerciante qurayshí de riqueza y nobleza; el Profeta ﷺ se casó con ella y no tomó otra esposa mientras ella vivió. Apoyó la llamada con sus bienes y con su persona.",
+   "context": "Murió tres años antes de la Hégira, y el Profeta ﷺ la recordaba con lealtad.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "abubakr": {
+   "name": "Abū Bakr al-Ṣiddīq",
+   "when": "m. 13 AH",
+   "summary": "Compañero del Profeta ﷺ en la cueva y primero de los califas bien guiados.",
+   "bio": "ʿAbd Allāh ibn Abī Quḥāfa al-Taymī, el primer hombre en abrazar el islam según el relato más conocido; liberó a los oprimidos y acompañó al Profeta ﷺ en la Hégira. Asumió el califato tras la muerte del Profeta ﷺ.",
+   "context": "Combatió a los apóstatas e hizo reunir el Corán en páginas por consejo de ʿUmar.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "umar": {
+   "name": "ʿUmar ibn al-Jaṭṭāb",
+   "when": "m. 23 AH",
+   "summary": "Al-Fārūq, segundo califa bien guiado; su conversión fortaleció el islam.",
+   "bio": "De los Banū ʿAdī, era conocido por su firmeza en la verdad y por su justicia. Abrazó el islam en La Meca, participó en todas las batallas y ejerció el califato diez años, en los que se conquistaron al-Shām, Irak y Egipto.",
+   "context": "Estableció el calendario hegírico e instituyó los registros (dīwāns).",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "uthman": {
+   "name": "ʿUthmān ibn ʿAffān",
+   "when": "m. 35 AH",
+   "summary": "Dhū al-Nūrayn, tercer califa bien guiado.",
+   "bio": "Se casó con dos hijas del Profeta ﷺ, Ruqayya y luego Umm Kulthūm. Emigró a Abisinia y luego a Medina, equipó el ejército de la Penuria (ʿUsra) y unificó las copias del Corán en un solo códice.",
+   "context": "Fue martirizado en las turbulencias del año 35 AH.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "ali": {
+   "name": "ʿAlī ibn Abī Ṭālib",
+   "when": "m. 40 AH",
+   "summary": "Primo del Profeta ﷺ, esposo de Fāṭima y cuarto califa bien guiado.",
+   "bio": "Creció en la casa del Profeta ﷺ y abrazó el islam siendo joven. Durmió en su lecho la noche de la Hégira y devolvió los depósitos, y participó en las batallas salvo Tabūk.",
+   "context": "Era conocido por su ciencia, su valentía y su juicio.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "aisha": {
+   "name": "ʿĀʾisha bint Abī Bakr",
+   "when": "m. 58 AH",
+   "summary": "Madre de los creyentes, entre los Compañeros con más transmisiones y jurisprudencia.",
+   "bio": "El Profeta ﷺ se casó con ella en La Meca y consumó el matrimonio en Medina. Transmitió más de dos mil hadices y los grandes Compañeros le consultaban.",
+   "context": "El Profeta ﷺ murió en su casa y fue enterrado en ella.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "bilal": {
+   "name": "Bilāl ibn Rabāḥ",
+   "when": "m. h. 20 AH",
+   "summary": "El primer almuédano del islam, conocido por su firmeza bajo la tortura.",
+   "disputed": "El año y el lugar de su muerte son discutidos en las fuentes biográficas (Damasco o Alepo).",
+   "bio": "Esclavo abisinio de Umayya ibn Jalaf, torturado por su islam, decía «Uno, Uno (Aḥad, Aḥad)»; Abū Bakr lo compró y lo liberó.",
+   "context": "Hizo la llamada a la oración el día de la Conquista de La Meca desde lo alto de la Kaaba.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "hamza": {
+   "name": "Hamza ibn ʿAbd al-Muṭṭalib",
+   "when": "m. 3 AH",
+   "summary": "Tío del Profeta ﷺ y León de Dios, señor de los mártires.",
+   "bio": "Abrazó el islam en el segundo año de la misión y los musulmanes se fortalecieron con él. Se distinguió en Badr y fue martirizado en Uhud.",
+   "context": "Lo mató Waḥshī ibn Ḥarb por orden de Hind bint ʿUtba.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "abutalib": {
+   "name": "Abū Ṭālib ibn ʿAbd al-Muṭṭalib",
+   "when": "m. 619",
+   "summary": "Tío del Profeta ﷺ, su tutor y protector frente a Quraysh.",
+   "bio": "Se hizo cargo del Profeta ﷺ tras su abuelo y lo protegió del daño de Quraysh durante diez años después de la misión, pero murió en la religión de su pueblo.",
+   "context": "Se transmite en los dos Ṣaḥīḥ que no pronunció la profesión de fe al morir.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "najashi": {
+   "name": "El Negus Aṣḥama",
+   "when": "m. 9 AH",
+   "summary": "El justo rey de Abisinia que dio refugio a los emigrados.",
+   "bio": "Escuchó la sura Maryam recitada por Jaʿfar ibn Abī Ṭālib y lloró, se negó a entregar a los musulmanes a Quraysh y abrazó el islam.",
+   "context": "El Profeta ﷺ rezó por él la oración fúnebre en ausencia cuando murió.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "musab": {
+   "name": "Muṣʿab ibn ʿUmayr",
+   "when": "m. 3 AH",
+   "summary": "El primer embajador del islam, enviado por el Profeta ﷺ para instruir a la gente de Medina.",
+   "bio": "Joven mimado de La Meca que abandonó la comodidad por su religión. Muchos de los Ansār abrazaron el islam por su mano, entre ellos Usayd ibn Ḥuḍayr y Saʿd ibn Muʿādh.",
+   "context": "Llevó el estandarte de los musulmanes en Uhud y fue martirizado.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "salman": {
+   "name": "Salmān al-Fārisī",
+   "when": "m. h. 35 AH",
+   "summary": "El buscador de la verdad venido de Persia y consejero de la batalla del Foso.",
+   "disputed": "Su edad al morir es muy discutida según los relatos.",
+   "bio": "Viajó desde Persia en busca de la verdad hasta llegar a Medina, donde abrazó el islam. Propuso cavar el foso.",
+   "context": "El Profeta ﷺ dijo: «Salmān es de los nuestros, la gente de la Casa».",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "khalid": {
+   "name": "Jālid ibn al-Walīd",
+   "when": "m. 21 AH",
+   "summary": "La Espada Desenvainada de Dios, gran jefe militar.",
+   "bio": "Uno de los jinetes de Quraysh, dirigió el movimiento envolvente en Uhud; luego abrazó el islam antes de la Conquista, participó en Mūta y mandó ejércitos después del Profeta ﷺ.",
+   "context": "El Profeta ﷺ lo llamó la Espada de Dios.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "abdurrahman": {
+   "name": "ʿAbd al-Raḥmān ibn ʿAwf",
+   "when": "m. 32 AH",
+   "summary": "Uno de los diez a quienes se prometió el Paraíso y el mercader íntegro entre los Compañeros.",
+   "bio": "Emigró dos veces, y el Profeta ﷺ estableció la hermandad entre él y Saʿd ibn al-Rabīʿ, pero rechazó los bienes de su hermano y dijo: «Mostradme el mercado».",
+   "context": "Dio una gran fortuna en caridad en el camino de Dios.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  }
+ },
+ "refs": {
+  "الجزء الأول والثاني": "Partes 1 y 2",
+  "المقدمة": "Introducción",
+  "الهجرة الأولى": "La primera emigración",
+  "ترجمة أبي بكر": "Entrada biográfica: Abū Bakr",
+  "ترجمة خالد": "Entrada biográfica: Jālid",
+  "ترجمة خديجة": "Entrada biográfica: Jadīya",
+  "ترجمة سلمان": "Entrada biográfica: Salmān",
+  "ترجمة عائشة": "Entrada biográfica: ʿĀʾisha",
+  "ترجمة عثمان": "Entrada biográfica: ʿUthmān",
+  "تفسير سورة المسد": "Comentario de la sura al-Masad",
+  "حديث تزويج خديجة": "Relato del matrimonio con Jadīya",
+  "خبر سلمان": "Relato de Salmān",
+  "خلافة عمر": "El califato de ʿUmar",
+  "ذكر أصحاب الفيل": "Relato de la gente del Elefante",
+  "ذكر الجهر بالدعوة": "Relato de la llamada pública",
+  "ذكر الهجرة": "Relato de la Hégira",
+  "ذكر الهجرة إلى أرض الحبشة": "Relato de la emigración a tierra de Abisinia",
+  "ذكر الهجرة إلى الحبشة": "Relato de la emigración a Abisinia",
+  "ذكر بناء الكعبة": "Relato de la construcción de la Kaaba",
+  "ذكر بناء المسجد والمؤاخاة والصحيفة": "Relato de la construcción de la mezquita, la hermandad y la Carta",
+  "ذكر بنيان قريش الكعبة": "Relato de la reconstrucción de la Kaaba por Quraysh",
+  "ذكر بيعة العقبة الأولى والثانية": "Relato del primer y segundo juramento de al-ʿAqaba",
+  "ذكر تعذيب بلال": "Relato de la tortura de Bilāl",
+  "ذكر مصعب": "Relato de Muṣʿab",
+  "ذكر مولد رسول الله ﷺ": "Relato del nacimiento del Mensajero de Dios ﷺ",
+  "ذكر وفاة رسول الله ﷺ": "Relato de la muerte del Mensajero de Dios ﷺ",
+  "سورة آل عمران: 121–179": "Sura Āl ʿImrān 3:121–179",
+  "سورة الأحزاب": "Sura al-Aḥzāb",
+  "سورة الأنفال": "Sura al-Anfāl",
+  "سورة الإسراء: 1": "Sura al-Isrāʾ 17:1",
+  "سورة البقرة: 127": "Sura al-Baqara 2:127",
+  "سورة البلد": "Sura al-Balad",
+  "سورة العلق": "Sura al-ʿAlaq",
+  "سورة الفتح": "Sura al-Fatḥ",
+  "سورة الفيل": "Sura al-Fīl",
+  "سورة المائدة: 3": "Sura al-Māʾida 5:3",
+  "سورة النصر": "Sura al-Naṣr",
+  "عام الحزن": "El Año de la Tristeza",
+  "غزوة أحد": "La batalla de Uhud",
+  "غزوة الخندق": "La batalla del Foso",
+  "كتاب الجنائز – الصلاة على النجاشي": "Libro de los funerales – La oración por el Negus",
+  "كتاب الجهاد والسير": "Libro del yihad y las expediciones",
+  "كتاب الحج – حجة النبي ﷺ": "Libro del Hayy – La peregrinación del Profeta ﷺ",
+  "كتاب الشروط – الشروط في الجهاد": "Libro de las condiciones – Las condiciones en el yihad",
+  "كتاب الصيام – صوم يوم الاثنين": "Libro del ayuno – El ayuno del lunes",
+  "كتاب المغازي – باب مرض النبي ﷺ ووفاته": "Libro de las expediciones – Capítulo sobre la enfermedad y muerte del Profeta ﷺ",
+  "كتاب المغازي – غزوة أحد": "Libro de las expediciones – Batalla de Uhud",
+  "كتاب المغازي – غزوة بدر": "Libro de las expediciones – Batalla de Badr",
+  "كتاب المغازي – غزوة مؤتة": "Libro de las expediciones – Batalla de Mūta",
+  "كتاب المغازي – فتح مكة": "Libro de las expediciones – Conquista de La Meca",
+  "كتاب المغازي – قتل حمزة": "Libro de las expediciones – La muerte de Hamza",
+  "كتاب المناقب": "Libro de los méritos",
+  "كتاب بدء الخلق": "Libro del comienzo de la creación",
+  "كتاب بدء الوحي": "Libro del comienzo de la revelación",
+  "كتاب بدء الوحي، باب كيف كان بدء الوحي": "Libro del comienzo de la revelación, capítulo: cómo comenzó la revelación",
+  "كتاب فضائل الصحابة": "Libro de las virtudes de los Compañeros",
+  "كتاب فضائل المدينة": "Libro de las virtudes de Medina",
+  "كتاب مناقب الأنصار": "Libro de los méritos de los Ansār",
+  "كتاب مناقب الأنصار – المؤاخاة": "Libro de los méritos de los Ansār – La hermandad",
+  "كتاب مناقب الأنصار – باب المعراج": "Libro de los méritos de los Ansār – Capítulo sobre el Miʿrāj",
+  "كتاب مناقب الأنصار – باب هجرة النبي ﷺ": "Libro de los méritos de los Ansār – Capítulo sobre la Hégira del Profeta ﷺ",
+  "كتاب مناقب الأنصار – تزويج النبي ﷺ خديجة": "Libro de los méritos de los Ansār – El matrimonio del Profeta ﷺ con Jadīya",
+  "كتاب مناقب الأنصار – قصة أبي طالب": "Libro de los méritos de los Ansār – La historia de Abū Ṭālib",
+  "مبيت علي على فراش النبي": "ʿAlī durmiendo en el lecho del Profeta",
+  "مقدمة الطبقات": "Introducción a los Ṭabaqāt",
+  "مواضع متفرقة": "Pasajes diversos",
+  "وفاة أبي طالب": "La muerte de Abū Ṭālib",
+  "وفاة أبي طالب وخديجة": "La muerte de Abū Ṭālib y de Jadīya"
+ }
+}

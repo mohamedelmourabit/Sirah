@@ -1,0 +1,200 @@
+{
+  "app": {
+    "title": "La Sîra du Prophète",
+    "tagline": "Un voyage à travers le temps et les personnages",
+    "slogan": "La Sîra … notre histoire, notre identité"
+  },
+  "nav": {
+    "label": "Navigation",
+    "home": "Accueil",
+    "timeline": "Chronologie",
+    "map": "Carte des relations",
+    "people": "Compagnons",
+    "events": "Événements",
+    "places": "Lieux",
+    "sources": "Sources",
+    "browse": "Parcourir"
+  },
+  "progress": {
+    "yours": "Votre progression",
+    "count": "{{n}} / {{total}} consultés",
+    "new": "Nouveau",
+    "viewed": "Consulté"
+  },
+  "search": {
+    "placeholder": "Rechercher un compagnon, un événement ou un lieu...",
+    "aria": "Recherche globale",
+    "empty": "Aucun résultat",
+    "clear": "Effacer la recherche",
+    "noResults": "Aucun résultat",
+    "noResultsHint": "Essayez une autre orthographe, un mot plus court ou le nom en arabe (ex. : عمر, Omar, Umar).",
+    "didYouMean": "Vouliez-vous dire :",
+    "alsoKnown": "Aussi connu comme : {{name}}",
+    "count_one": "{{count}} résultat",
+    "count_other": "{{count}} résultats",
+    "hint": "↑↓ naviguer · Entrée ouvrir · Échap fermer"
+  },
+  "account": {
+    "browse": "Naviguer sans compte",
+    "title": "Compte facultatif",
+    "desc": "Le compte sert uniquement à synchroniser votre progression entre vos appareils. Tout le contenu reste accessible sans compte.",
+    "off": "La synchronisation n'est pas activée. Ajoutez VITE_SUPABASE_URL et VITE_SUPABASE_ANON_KEY dans le fichier .env.",
+    "signedAs": "Connecté en tant que :",
+    "signOut": "Se déconnecter",
+    "email": "Votre adresse e-mail",
+    "send": "Envoyer le lien de connexion",
+    "sent": "Le lien de connexion a été envoyé à votre e-mail.",
+    "continue": "Continuer sans compte"
+  },
+  "map": {
+    "aria": "Carte interactive des relations",
+    "canvas": "Carte des relations",
+    "center": "Muhammad ﷺ",
+    "discoverTitle": "Découvrir la Sîra",
+    "discoverText": "Explorez les événements et les compagnons grâce à la carte circulaire. Cliquez sur un nœud.",
+    "hint": "Glissez pour déplacer la carte · molette pour zoomer",
+    "zoomIn": "Zoom avant",
+    "zoomOut": "Zoom arrière",
+    "fit": "Ajuster",
+    "filter": "Filtres",
+    "events": "Événements",
+    "people": "Compagnons",
+    "places": "Lieux",
+    "relations": "Relations",
+    "periods": "Grandes périodes",
+    "all": "Tout",
+    "zoomHint": "Zoomez pour afficher tous les noms ; sélectionnez un cercle pour voir ses relations directes."
+  },
+  "kinds": {
+    "person": "Compagnon / personnage",
+    "event": "Événement",
+    "place": "Lieu",
+    "group": "Groupe"
+  },
+  "periods": {
+    "pre": "Avant la révélation",
+    "mecca": "Période mecquoise",
+    "hijra": "L'Hégire",
+    "medina": "Période médinoise"
+  },
+  "timeline": {
+    "title": "Chronologie",
+    "viewAll": "Tout voir →"
+  },
+  "directory": {
+    "placeholder": "Rechercher par nom ou mot-clé...",
+    "aria": "Recherche",
+    "results_one": "{{count}} résultat",
+    "results_other": "{{count}} résultats",
+    "all": "Tout"
+  },
+  "detail": {
+    "close": "Fermer",
+    "bio": "Biographie",
+    "context": "Contexte historique",
+    "sources": "Sources",
+    "related": "Liens",
+    "showMap": "Voir sur la carte",
+    "showTimeline": "Dans la chronologie"
+  },
+  "sourcesPage": {
+    "legend": "Le statut de vérification historique est distinct du statut de traduction. Les quatre statuts :"
+  },
+  "features": [
+    {
+      "icon": "🗺",
+      "title": "Carte interactive",
+      "desc": "Explorez les événements et les compagnons à travers des cercles et des relations."
+    },
+    {
+      "icon": "📅",
+      "title": "Chronologie complète",
+      "desc": "De l'avant-révélation jusqu'à la mort du Prophète ﷺ, avec les principaux événements."
+    },
+    {
+      "icon": "🔎",
+      "title": "Recherche avancée",
+      "desc": "Parmi les compagnons, les événements, les lieux et les sources."
+    },
+    {
+      "icon": "👤",
+      "title": "Sans compte",
+      "desc": "Naviguez directement, en toute liberté."
+    },
+    {
+      "icon": "🔒",
+      "title": "Compte facultatif",
+      "desc": "Pour enregistrer et synchroniser votre progression entre vos appareils."
+    }
+  ],
+  "lang": {
+    "label": "Langue"
+  },
+  "verification": {
+    "title": "Vérification historique",
+    "reviewedBy": "Relu par {{by}} · {{at}}",
+    "diffNote": "Note sur les divergences de récits",
+    "diffNoteHint": "Note présente dans les données, pas encore relue.",
+    "VERIFIED": {
+      "label": "Vérifié",
+      "desc": "Appuyé par des sources fiables ayant été examinées."
+    },
+    "DISPUTED": {
+      "label": "Controversé",
+      "desc": "Les récits historiques ou les avis des savants divergent."
+    },
+    "UNCERTAIN": {
+      "label": "Incertain",
+      "desc": "Preuves insuffisantes pour établir l'affirmation."
+    },
+    "PENDING_REVIEW": {
+      "label": "En attente de révision",
+      "desc": "Pas encore examiné par un relecteur qualifié ; à ne pas considérer comme vérifié."
+    },
+    "refs": "Références à l’appui"
+  },
+  "tr": {
+    "pillOriginal": "Texte arabe original",
+    "pillApproved": "Traduction approuvée",
+    "pillDraft": "Brouillon – En attente de révision",
+    "pillPending": "Texte arabe original – aucune traduction approuvée",
+    "reviewedBy": "Traduction relue par {{by}} · {{at}}",
+    "draftNote": "Brouillon de traduction non encore relu ; la référence reste le texte arabe original.",
+    "viewOriginal": "Voir le texte arabe original",
+    "viewTranslation": "Voir la traduction",
+    "tagAr": "AR",
+    "tagDraft": "Brouillon",
+    "bar": "{{n}} fiches sur {{total}} ont une traduction approuvée. Pour les autres, le texte arabe original est affiché.",
+    "barDraft": "Aperçu des brouillons de traduction – Brouillon – En attente de révision. Non relus ; la référence reste le texte arabe original.",
+    "preview": "Aperçu des brouillons",
+    "back": "Revenir à l'arabe original"
+  },
+  "cat": {
+    "person": "Compagnons et personnages",
+    "event": "Événements",
+    "place": "Lieux",
+    "period": "Périodes historiques"
+  },
+  "view": {
+    "label": "Mode d'affichage",
+    "map": "Carte des relations",
+    "list": "Vue en liste"
+  },
+  "browse": {
+    "sort": "Tri",
+    "sortChrono": "Chronologique",
+    "sortName": "Nom",
+    "sortUnread": "Nouveautés d’abord",
+    "sortVerification": "Statut de vérification",
+    "reading": "Lecture",
+    "verification": "Vérification",
+    "period": "Période",
+    "type": "Type",
+    "all": "Tout",
+    "entries_one": "{{count}} fiche",
+    "entries_other": "{{count}} fiches",
+    "empty": "Aucune fiche ne correspond à ces filtres.",
+    "reset": "Réinitialiser les filtres",
+    "showPeriod": "Voir les fiches de cette période"
+  }
+}

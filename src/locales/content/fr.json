@@ -1,0 +1,613 @@
+{
+ "books": {
+  "صحيح البخاري": "Sahih al-Bukhari",
+  "السيرة النبوية — ابن هشام": "La Biographie prophétique — Ibn Hishām",
+  "البداية والنهاية — ابن كثير": "Le Commencement et la Fin — Ibn Kathīr",
+  "صحيح مسلم": "Sahih Muslim",
+  "القرآن الكريم": "Le Noble Coran",
+  "الرحيق المختوم — المباركفوري": "Le Nectar cacheté — al-Mubārakfūrī",
+  "الطبقات الكبرى — ابن سعد": "Les Grandes Générations — Ibn Saʿd",
+  "تاريخ الرسل والملوك — الطبري": "Histoire des Messagers et des Rois — al-Ṭabarī",
+  "الإصابة في تمييز الصحابة — ابن حجر": "al-Iṣāba fī Tamyīz al-Ṣaḥāba — Ibn Ḥajar"
+ },
+ "entities": {
+  "muhammad": {
+   "name": "Le Prophète Muhammad ﷺ",
+   "when": "570 – 632",
+   "summary": "Sceau des prophètes et des messagers, Muhammad ibn ʿAbd Allāh ibn ʿAbd al-Muṭṭalib, des Banū Hāshim, de Quraysh.",
+   "bio": "Il naquit à La Mecque l'année de l'Éléphant et grandit orphelin ; parmi les siens, on le connaissait comme le Véridique, le Digne de confiance. Il fut envoyé à l'âge de quarante ans, appela à l'unicité de Dieu pendant vingt-trois ans, puis mourut à Médine al-Munawwara.",
+   "context": "Il vécut dans un milieu tribal de la péninsule arabique dominé par l'idolâtrie ; son message apporta le monothéisme et l'édification d'une société nouvelle fondée sur la justice et la fraternité.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "companions": {
+   "name": "Les Compagnons",
+   "when": "610 – 632",
+   "summary": "Ceux qui ont rencontré le Prophète ﷺ en croyant en lui et sont morts dans cette foi.",
+   "bio": "Définition du Compagnon selon la majorité des spécialistes du hadith : celui qui a rencontré le Prophète ﷺ en croyant en lui et est mort musulman. Ils ont porté le message, transmis la Sunna et fondé l'État après lui.",
+   "context": "Ils se répartissent en plusieurs rangs : les premiers croyants, les émigrés en Abyssinie, les combattants de Badr, ceux qui prêtèrent le serment de Ridwān, et ceux qui embrassèrent l'islam l'année de la Conquête.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "makkah": {
+   "name": "La Mecque (al-Mukarrama)",
+   "when": "Naissance et enfance du Prophète ﷺ",
+   "summary": "Lieu de naissance du Prophète ﷺ, terre de la révélation et siège de la noble Kaaba.",
+   "bio": "Ville située dans une vallée dépourvue de cultures au Hedjaz, abritant la Maison sacrée ; c'était un centre commercial et religieux dirigé par Quraysh.",
+   "context": "Le Prophète ﷺ y vécut cinquante-trois ans avant l'Hégire, et la conquit en 8 AH.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "madinah": {
+   "name": "Médine (al-Munawwara)",
+   "when": "À partir de 622",
+   "summary": "Ville de l'Hégire, capitale du premier État islamique et lieu de sépulture du Prophète ﷺ.",
+   "bio": "Elle s'appelait Yathrib ; y vivaient les Aws, les Khazraj et des tribus juives. Après l'Hégire, le Prophète ﷺ changea son nom en Ṭayba et al-Madīna.",
+   "context": "Elle abrite la Mosquée du Prophète ; les expéditions en partirent et la communauté musulmane s'y construisit.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "hira": {
+   "name": "La grotte de Hira",
+   "when": "Jabal al-Nour – La Mecque",
+   "summary": "La grotte où le Prophète ﷺ se retirait pour adorer et où descendit la première révélation.",
+   "bio": "Petite grotte du Jabal al-Nūr, à environ trois milles de La Mecque, où le Prophète ﷺ se retirait pour l'adoration durant un certain nombre de nuits.",
+   "context": "Les premiers versets de la sourate al-ʿAlaq y furent révélés.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "kaaba": {
+   "name": "La noble Kaaba",
+   "when": "Qibla des musulmans",
+   "summary": "La Maison sacrée dont Ibrahim et Ismaïl, paix sur eux, ont élevé les fondations.",
+   "bio": "Quraysh la reconstruisit environ cinq ans avant la mission ; le Prophète ﷺ y participa et arbitra la pose de la Pierre noire.",
+   "context": "Le Prophète ﷺ la purifia des idoles le jour de la Conquête de La Mecque.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "taif": {
+   "name": "Taïf",
+   "when": "10ᵉ année de la mission",
+   "summary": "La ville où le Prophète ﷺ se rendit pour appeler ses habitants, qui le repoussèrent.",
+   "bio": "Le Prophète ﷺ s'y rendit avec Zayd ibn Ḥāritha après la mort d'Abū Ṭālib et de Khadīja ; ses insensés lui firent du mal et lui jetèrent des pierres.",
+   "context": "Il est rapporté dans le Ṣaḥīḥ que Jibrīl lui proposa de refermer sur eux les deux montagnes, et il répondit : « Plutôt, j'espère que Dieu fera sortir de leurs reins ceux qui adoreront Dieu seul. »",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "habasha": {
+   "name": "L'Abyssinie",
+   "when": "Deux migrations, 615 et 616",
+   "summary": "La terre où émigrèrent les premiers musulmans, sous la protection du Négus juste.",
+   "bio": "Le Prophète ﷺ dit aux musulmans : « Il y a là-bas un roi auprès de qui nul n'est lésé. » Ils y demeurèrent en sécurité dans leur religion.",
+   "context": "Parmi les plus éminents émigrés : ʿUthmān ibn ʿAffān et son épouse Ruqayya, ainsi que Jaʿfar ibn Abī Ṭālib.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "elephant": {
+   "name": "L'Année de l'Éléphant",
+   "when": "vers 570",
+   "summary": "La tentative d'Abraha l'Abyssin de détruire la Kaaba et l'anéantissement de son armée.",
+   "bio": "Abraha mena vers La Mecque une armée comptant des éléphants, et Dieu envoya contre elle des vols d'oiseaux. Le Prophète ﷺ naquit cette année-là.",
+   "context": "La sourate al-Fīl l'évoque, et les Arabes s'en servaient pour dater les événements.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "birth": {
+   "name": "Naissance du Prophète ﷺ",
+   "when": "12 Rabīʿ al-Awwal – Année de l'Éléphant",
+   "summary": "Naissance de Muhammad ibn ʿAbd Allāh à La Mecque, orphelin de père.",
+   "disputed": "Le jour du mois est discuté : le plus connu est le 12 Rabīʿ al-Awwal ; on rapporte aussi le 2, le 8 ou le 9. Les astronomes contemporains retiennent le 9 Rabīʿ al-Awwal.",
+   "bio": "Il naquit après la mort de son père ʿAbd Allāh ; son grand-père ʿAbd al-Muṭṭalib, puis son oncle Abū Ṭālib, le prirent en charge. Il fut mis en nourrice chez les Banū Saʿd, auprès de Ḥalīma al-Saʿdiyya.",
+   "context": "Ce qui est admis, c'est qu'il naquit un lundi, l'année de l'Éléphant.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "marriage": {
+   "name": "Mariage avec Khadīja",
+   "when": "vers 595",
+   "summary": "Le mariage du Prophète ﷺ avec Khadīja bint Khuwaylid, alors qu'il avait vingt-cinq ans.",
+   "disputed": "L'âge de Khadīja lors du mariage : l'avis le plus connu est quarante ans ; d'autres avis sont rapportés.",
+   "bio": "Le Prophète ﷺ travailla dans son commerce vers al-Shām ; elle vit sa loyauté et lui proposa le mariage. Elle lui donna ses enfants, à l'exception d'Ibrāhīm.",
+   "context": "Elle fut la première à croire en lui et son soutien durant les années les plus dures de l'appel.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "revelation": {
+   "name": "La Révélation",
+   "when": "Ramadan – vers 610",
+   "summary": "Jibrīl apporta les premiers versets du Coran dans la grotte de Hira : « Lis, au nom de ton Seigneur qui a créé. »",
+   "disputed": "Le jour de la première révélation en Ramadan est discuté (17, 21 ou 24) ; beaucoup retiennent la Nuit du Destin comme le plus probable.",
+   "bio": "Le Prophète ﷺ avait quarante ans lorsque Jibrīl vint, l'étreignit et lui dit : « Lis. » Il retourna auprès de Khadīja le cœur frémissant ; elle le rassura et l'emmena chez Waraqa ibn Nawfal.",
+   "context": "Puis la révélation s'interrompit un temps, et la sourate al-Muddaththir fut révélée avec l'ordre d'avertir.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "dawah": {
+   "name": "La prédication publique",
+   "when": "vers 613",
+   "summary": "Après trois années de prédication discrète, Dieu ordonna à Son Prophète de proclamer ouvertement le message.",
+   "bio": "Le Prophète ﷺ monta sur le mont al-Ṣafā et appela Quraysh, et fut révélée la parole du Très-Haut (en substance) : « Et avertis les plus proches de tes proches. »",
+   "context": "Après cela, le mal que les polythéistes faisaient aux musulmans s'intensifia.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "habasha_hijra": {
+   "name": "L'émigration en Abyssinie",
+   "when": "5ᵉ année de la mission",
+   "summary": "Les musulmans fuirent avec leur foi les persécutions de Quraysh pour se réfugier auprès du Négus.",
+   "bio": "Le premier groupe partit, environ douze hommes et quatre femmes, puis des groupes plus nombreux les suivirent. Quraysh envoya une délégation auprès du Négus, qui la renvoya.",
+   "context": "Les ouvrages de biographie ont conservé le dialogue entre Jaʿfar ibn Abī Ṭālib et le Négus.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "sorrow": {
+   "name": "L'Année de la tristesse",
+   "when": "10ᵉ année de la mission – 619",
+   "summary": "La mort d'Abū Ṭālib puis de Khadīja, et le départ du Prophète ﷺ pour Taïf.",
+   "bio": "Le Prophète ﷺ perdit son protecteur et son épouse en peu de temps, et le mal que lui faisait Quraysh s'aggrava.",
+   "context": "Elle fut ainsi nommée par les biographes.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "isra": {
+   "name": "Le Voyage nocturne et l'Ascension",
+   "when": "Avant l'Hégire",
+   "summary": "Le voyage nocturne du Prophète ﷺ de la Mosquée sacrée à al-Aqṣā, puis son ascension à travers les cieux.",
+   "disputed": "Le fait que le voyage ait eu lieu est certain, mais sa date est discutée ; aucune preuve authentique ne soutient la célèbre nuit du 27 Rajab.",
+   "bio": "Les cinq prières y furent prescrites, et le Prophète ﷺ vit quelques-uns des plus grands signes de son Seigneur.",
+   "context": "Le Coran l'évoque au début de la sourate al-Isrāʾ et dans la sourate al-Najm.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "aqaba": {
+   "name": "Les deux serments d'al-ʿAqaba",
+   "when": "621 – 622",
+   "summary": "Une délégation des Ansār prêta serment de soutenir et protéger le Prophète ﷺ comme ils protègent leurs femmes et leurs enfants.",
+   "bio": "Lors de la première ʿAqaba, douze personnes prêtèrent serment, et lors de la seconde, soixante-treize hommes et deux femmes. Le Prophète ﷺ envoya Muṣʿab ibn ʿUmayr comme enseignant.",
+   "context": "Elle prépara directement l'Hégire vers Médine.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "hijra": {
+   "name": "L'Hégire vers Médine",
+   "when": "1 AH – 622",
+   "summary": "Le Prophète ﷺ quitta La Mecque pour Médine avec Abū Bakr : début du calendrier hégirien.",
+   "bio": "Ils partirent de nuit et se cachèrent dans la grotte de Thawr pendant trois jours, puis se rendirent avec un guide à Qubāʾ, puis à Médine. Ses habitants l'accueillirent avec joie.",
+   "context": "On s'en servit pour dater à l'époque de ʿUmar ibn al-Khaṭṭāb, que Dieu l'agrée.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "madina_state": {
+   "name": "La fondation de l'État islamique",
+   "when": "1 AH – 622/623",
+   "summary": "Construction de la Mosquée du Prophète, fraternité entre Muhājirūn et Ansār, et rédaction de la Charte de Médine.",
+   "disputed": "La Charte est rapportée par Ibn Isḥāq et d'autres, mais sa formulation et sa réunion en un seul document font débat parmi les chercheurs.",
+   "bio": "Le Prophète ﷺ commença par bâtir la mosquée, puis établit la fraternité entre les Muhājirūn et les Ansār, et organisa les relations entre les habitants de Médine par un document connu sous le nom de Ṣaḥīfa (Charte) de Médine.",
+   "context": "Ces étapes formèrent le noyau de la communauté et de l'État.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "badr": {
+   "name": "La bataille de Badr",
+   "when": "17 Ramadan 2 AH – 624",
+   "summary": "Première bataille décisive entre les musulmans et Quraysh, remportée par les musulmans.",
+   "bio": "Le Prophète ﷺ sortit avec environ trois cent treize hommes et ils affrontèrent environ mille hommes de Quraysh ; Dieu leur donna la victoire malgré leur petit nombre et leur faible équipement.",
+   "context": "Le Coran l'a appelé le Jour du Discernement (Yawm al-Furqān).",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "uhud": {
+   "name": "La bataille d'Uhud",
+   "when": "Shawwāl 3 AH – 625",
+   "summary": "Bataille au pied du mont Uhud où Hamza et plusieurs Compagnons tombèrent en martyrs.",
+   "bio": "Elle commença par une victoire des musulmans, puis les archers désobéirent à l'ordre du Prophète ﷺ, et Khālid ibn al-Walīd contourna avec la cavalerie de Quraysh.",
+   "context": "La sourate Āl ʿImrān en parle.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "khandaq": {
+   "name": "La bataille du Fossé",
+   "when": "Shawwāl 5 AH – 627",
+   "summary": "Les coalisés assiégèrent Médine ; le fossé fut creusé sur le conseil de Salmān al-Fārisī.",
+   "bio": "Les coalisés assiégèrent Médine pendant environ un mois, et Dieu envoya contre eux un vent et des armées, et ils repartirent déçus.",
+   "context": "Des versets de la sourate al-Aḥzāb furent révélés à son sujet.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "hudaybiyyah": {
+   "name": "Le traité d'al-Hudaybiya",
+   "when": "Dhū al-Qaʿda 6 AH – 628",
+   "summary": "Traité entre le Prophète ﷺ et Quraysh mettant fin à la guerre pour dix ans.",
+   "bio": "Le Prophète ﷺ partit dans l'intention d'accomplir la ʿumra et Quraysh l'en empêcha ; ils convinrent d'une trêve, à condition qu'il revienne l'année suivante. Le traité sembla pesant à certains Compagnons, mais Dieu l'a appelé une victoire.",
+   "context": "Il fut suivi du serment de Ridwān sous l'arbre.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "fath": {
+   "name": "La conquête de La Mecque",
+   "when": "Ramadan 8 AH – 630",
+   "summary": "Le Prophète ﷺ entra à La Mecque avec dix mille Compagnons et purifia la Kaaba des idoles.",
+   "bio": "Quraysh rompit le traité, et le Prophète ﷺ marcha contre elle ; il y entra avec humilité et pardonna à ses habitants, en disant : « Allez, vous êtes libérés. »",
+   "context": "Après cela, les gens entrèrent en foule dans la religion de Dieu.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "farewell": {
+   "name": "Le Pèlerinage d'adieu",
+   "when": "10 AH – 632",
+   "summary": "Le seul pèlerinage du Prophète ﷺ, durant lequel il prononça le grand sermon de ʿArafa.",
+   "bio": "Il prononça à ʿArafa un sermon affirmant l'inviolabilité du sang et des biens ainsi que les droits des femmes, et fut révélée la parole du Très-Haut (en substance) : « Aujourd'hui, J'ai parachevé pour vous votre religion. »",
+   "context": "Plus de cent mille Compagnons étaient avec lui.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "death": {
+   "name": "Mort du Prophète ﷺ",
+   "when": "Rabīʿ al-Awwal 11 AH – 632",
+   "summary": "Le Prophète ﷺ rejoignit le Compagnon suprême à Médine, à l'âge de soixante-trois ans.",
+   "disputed": "L'avis le plus répandu est qu'il mourut le lundi 12 Rabīʿ al-Awwal ; on rapporte aussi le 2 Rabīʿ al-Awwal.",
+   "bio": "Il fut malade quelques jours et ordonna à Abū Bakr de diriger la prière des gens ; il mourut dans la maison de ʿĀʾisha, que Dieu l'agrée, et y fut enterré.",
+   "context": "Abū Bakr assuma le califat après lui.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "khadija": {
+   "name": "Khadīja bint Khuwaylid",
+   "when": "m. 619",
+   "summary": "Première Mère des croyants et première à avoir cru au Prophète ﷺ.",
+   "bio": "Commerçante qurayshite de richesse et de noblesse ; le Prophète ﷺ l'épousa et ne prit pas d'autre épouse tant qu'elle vécut. Elle soutint l'appel de ses biens et de sa personne.",
+   "context": "Elle mourut trois ans avant l'Hégire, et le Prophète ﷺ la mentionnait avec fidélité.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "abubakr": {
+   "name": "Abū Bakr al-Ṣiddīq",
+   "when": "m. 13 AH",
+   "summary": "Compagnon du Prophète ﷺ dans la grotte et premier des califes bien guidés.",
+   "bio": "ʿAbd Allāh ibn Abī Quḥāfa al-Taymī, le premier homme à embrasser l'islam selon le récit le plus connu ; il affranchit les opprimés et accompagna le Prophète ﷺ lors de l'Hégire. Il assuma le califat après la mort du Prophète ﷺ.",
+   "context": "Il combattit les apostats et fit rassembler le Coran en feuillets sur le conseil de ʿUmar.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "umar": {
+   "name": "ʿUmar ibn al-Khaṭṭāb",
+   "when": "m. 23 AH",
+   "summary": "Al-Fārūq, deuxième calife bien guidé ; sa conversion renforça l'islam.",
+   "bio": "Des Banū ʿAdī, il était connu pour sa fermeté dans la vérité et pour sa justice. Il embrassa l'islam à La Mecque, participa à toutes les batailles, et exerça le califat dix ans, durant lesquels furent conquis al-Shām, l'Irak et l'Égypte.",
+   "context": "Il établit le calendrier hégirien et institua les registres (dīwāns).",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "uthman": {
+   "name": "ʿUthmān ibn ʿAffān",
+   "when": "m. 35 AH",
+   "summary": "Dhū al-Nūrayn, troisième calife bien guidé.",
+   "bio": "Il épousa deux filles du Prophète ﷺ, Ruqayya puis Umm Kulthūm. Il émigra en Abyssinie puis à Médine, équipa l'armée de la Détresse (ʿUsra), et unifia les exemplaires du Coran en un seul codex.",
+   "context": "Il fut martyrisé lors des troubles de l'an 35 AH.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "ali": {
+   "name": "ʿAlī ibn Abī Ṭālib",
+   "when": "m. 40 AH",
+   "summary": "Cousin du Prophète ﷺ, époux de Fāṭima et quatrième calife bien guidé.",
+   "bio": "Il grandit dans la maison du Prophète ﷺ et embrassa l'islam jeune. Il dormit dans son lit la nuit de l'Hégire et restitua les dépôts, et participa aux batailles sauf Tabūk.",
+   "context": "Il était connu pour son savoir, son courage et son jugement.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "aisha": {
+   "name": "ʿĀʾisha bint Abī Bakr",
+   "when": "m. 58 AH",
+   "summary": "Mère des croyants, parmi les Compagnons ayant le plus transmis de hadiths et de jurisprudence.",
+   "bio": "Le Prophète ﷺ l'épousa à La Mecque et consomma le mariage à Médine. Elle rapporta plus de deux mille hadiths, et les grands Compagnons l'interrogeaient.",
+   "context": "Le Prophète ﷺ mourut dans sa maison et y fut enterré.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "bilal": {
+   "name": "Bilāl ibn Rabāḥ",
+   "when": "m. vers 20 AH",
+   "summary": "Premier muezzin de l'islam, connu pour sa fermeté sous la torture.",
+   "disputed": "L'année et le lieu de sa mort sont discutés dans les sources biographiques (Damas ou Alep).",
+   "bio": "Esclave abyssin d'Umayya ibn Khalaf, torturé pour son islam, il disait « Un, Un (Aḥad, Aḥad) » ; Abū Bakr l'acheta et l'affranchit.",
+   "context": "Il fit l'appel à la prière le jour de la Conquête de La Mecque depuis le sommet de la Kaaba.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "hamza": {
+   "name": "Hamza ibn ʿAbd al-Muṭṭalib",
+   "when": "m. 3 AH",
+   "summary": "Oncle du Prophète ﷺ et Lion de Dieu, maître des martyrs.",
+   "bio": "Il embrassa l'islam la deuxième année de la mission et les musulmans en furent renforcés. Il se distingua à Badr et fut martyrisé à Uhud.",
+   "context": "Waḥshī ibn Ḥarb le tua sur l'ordre de Hind bint ʿUtba.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "abutalib": {
+   "name": "Abū Ṭālib ibn ʿAbd al-Muṭṭalib",
+   "when": "m. 619",
+   "summary": "Oncle du Prophète ﷺ, son tuteur et son protecteur face à Quraysh.",
+   "bio": "Il prit en charge le Prophète ﷺ après son grand-père et le protégea du mal de Quraysh pendant dix ans après la mission, mais il mourut sur la religion de son peuple.",
+   "context": "Il est rapporté dans les deux Ṣaḥīḥ qu'il ne prononça pas la profession de foi à sa mort.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "najashi": {
+   "name": "Le Négus Aṣḥama",
+   "when": "m. 9 AH",
+   "summary": "Le roi juste d'Abyssinie qui accueillit les émigrés.",
+   "bio": "Il écouta la sourate Maryam récitée par Jaʿfar ibn Abī Ṭālib et pleura, refusa de livrer les musulmans à Quraysh, et embrassa l'islam.",
+   "context": "Le Prophète ﷺ pria sur lui la prière funéraire in absentia à sa mort.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "musab": {
+   "name": "Muṣʿab ibn ʿUmayr",
+   "when": "m. 3 AH",
+   "summary": "Premier ambassadeur de l'islam, envoyé par le Prophète ﷺ pour instruire les habitants de Médine.",
+   "bio": "Jeune homme choyé de La Mecque qui renonça à l'aisance pour sa religion. Beaucoup d'Ansār embrassèrent l'islam par son entremise, parmi eux Usayd ibn Ḥuḍayr et Saʿd ibn Muʿādh.",
+   "context": "Il porta l'étendard des musulmans à Uhud et fut martyrisé.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "salman": {
+   "name": "Salmān al-Fārisī",
+   "when": "m. vers 35 AH",
+   "summary": "Le chercheur de vérité venu de Perse et conseiller de la bataille du Fossé.",
+   "disputed": "Son âge à sa mort est très discuté selon les récits.",
+   "bio": "Il voyagea depuis la Perse à la recherche de la vérité jusqu'à atteindre Médine, où il embrassa l'islam. Il proposa de creuser le fossé.",
+   "context": "Le Prophète ﷺ dit : « Salmān est des nôtres, les gens de la Maison. »",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "khalid": {
+   "name": "Khālid ibn al-Walīd",
+   "when": "m. 21 AH",
+   "summary": "L'Épée dégainée de Dieu, grand chef militaire.",
+   "bio": "L'un des cavaliers de Quraysh, qui mena le mouvement d'encerclement à Uhud, puis embrassa l'islam avant la Conquête, participa à Mūta et commanda des armées après le Prophète ﷺ.",
+   "context": "Le Prophète ﷺ le nomma l'Épée de Dieu.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  },
+  "abdurrahman": {
+   "name": "ʿAbd al-Raḥmān ibn ʿAwf",
+   "when": "m. 32 AH",
+   "summary": "L'un des dix promis au Paradis et le marchand intègre parmi les Compagnons.",
+   "bio": "Il émigra deux fois, et le Prophète ﷺ établit la fraternité entre lui et Saʿd ibn al-Rabīʿ, mais il refusa les biens de son frère et dit : « Montrez-moi le marché. »",
+   "context": "Il donna une grande fortune en aumône dans la voie de Dieu.",
+   "translation": {
+    "status": "draft"
+   },
+   "verification": {
+    "status": "PENDING_REVIEW"
+   }
+  }
+ },
+ "refs": {
+  "الجزء الأول والثاني": "Parties 1 et 2",
+  "المقدمة": "Introduction",
+  "الهجرة الأولى": "La première émigration",
+  "ترجمة أبي بكر": "Notice biographique : Abū Bakr",
+  "ترجمة خالد": "Notice biographique : Khālid",
+  "ترجمة خديجة": "Notice biographique : Khadīja",
+  "ترجمة سلمان": "Notice biographique : Salmān",
+  "ترجمة عائشة": "Notice biographique : ʿĀʾisha",
+  "ترجمة عثمان": "Notice biographique : ʿUthmān",
+  "تفسير سورة المسد": "Commentaire de la sourate al-Masad",
+  "حديث تزويج خديجة": "Récit du mariage avec Khadīja",
+  "خبر سلمان": "Récit de Salmān",
+  "خلافة عمر": "Le califat de ʿUmar",
+  "ذكر أصحاب الفيل": "Récit des gens de l'Éléphant",
+  "ذكر الجهر بالدعوة": "Récit de l'appel public",
+  "ذكر الهجرة": "Récit de l'Hégire",
+  "ذكر الهجرة إلى أرض الحبشة": "Récit de l'émigration en terre d'Abyssinie",
+  "ذكر الهجرة إلى الحبشة": "Récit de l'émigration en Abyssinie",
+  "ذكر بناء الكعبة": "Récit de la construction de la Kaaba",
+  "ذكر بناء المسجد والمؤاخاة والصحيفة": "Récit de la construction de la mosquée, de la fraternité et de la Charte",
+  "ذكر بنيان قريش الكعبة": "Récit de la reconstruction de la Kaaba par Quraysh",
+  "ذكر بيعة العقبة الأولى والثانية": "Récit des premier et second serments d'al-ʿAqaba",
+  "ذكر تعذيب بلال": "Récit de la torture de Bilāl",
+  "ذكر مصعب": "Récit de Muṣʿab",
+  "ذكر مولد رسول الله ﷺ": "Récit de la naissance du Messager de Dieu ﷺ",
+  "ذكر وفاة رسول الله ﷺ": "Récit de la mort du Messager de Dieu ﷺ",
+  "سورة آل عمران: 121–179": "Sourate Āl ʿImrān 3:121–179",
+  "سورة الأحزاب": "Sourate al-Aḥzāb",
+  "سورة الأنفال": "Sourate al-Anfāl",
+  "سورة الإسراء: 1": "Sourate al-Isrāʾ 17:1",
+  "سورة البقرة: 127": "Sourate al-Baqara 2:127",
+  "سورة البلد": "Sourate al-Balad",
+  "سورة العلق": "Sourate al-ʿAlaq",
+  "سورة الفتح": "Sourate al-Fatḥ",
+  "سورة الفيل": "Sourate al-Fīl",
+  "سورة المائدة: 3": "Sourate al-Māʾida 5:3",
+  "سورة النصر": "Sourate al-Naṣr",
+  "عام الحزن": "L'Année de la tristesse",
+  "غزوة أحد": "La bataille d'Uhud",
+  "غزوة الخندق": "La bataille du Fossé",
+  "كتاب الجنائز – الصلاة على النجاشي": "Livre des funérailles – La prière sur le Négus",
+  "كتاب الجهاد والسير": "Livre du jihad et des expéditions",
+  "كتاب الحج – حجة النبي ﷺ": "Livre du Hajj – Le pèlerinage du Prophète ﷺ",
+  "كتاب الشروط – الشروط في الجهاد": "Livre des conditions – Les conditions dans le jihad",
+  "كتاب الصيام – صوم يوم الاثنين": "Livre du jeûne – Le jeûne du lundi",
+  "كتاب المغازي – باب مرض النبي ﷺ ووفاته": "Livre des expéditions – Chapitre sur la maladie et la mort du Prophète ﷺ",
+  "كتاب المغازي – غزوة أحد": "Livre des expéditions – Bataille d'Uhud",
+  "كتاب المغازي – غزوة بدر": "Livre des expéditions – Bataille de Badr",
+  "كتاب المغازي – غزوة مؤتة": "Livre des expéditions – Bataille de Mūta",
+  "كتاب المغازي – فتح مكة": "Livre des expéditions – Conquête de La Mecque",
+  "كتاب المغازي – قتل حمزة": "Livre des expéditions – La mort de Hamza",
+  "كتاب المناقب": "Livre des mérites",
+  "كتاب بدء الخلق": "Livre du commencement de la création",
+  "كتاب بدء الوحي": "Livre du commencement de la révélation",
+  "كتاب بدء الوحي، باب كيف كان بدء الوحي": "Livre du commencement de la révélation, chapitre : comment commença la révélation",
+  "كتاب فضائل الصحابة": "Livre des vertus des Compagnons",
+  "كتاب فضائل المدينة": "Livre des vertus de Médine",
+  "كتاب مناقب الأنصار": "Livre des mérites des Ansār",
+  "كتاب مناقب الأنصار – المؤاخاة": "Livre des mérites des Ansār – La fraternité",
+  "كتاب مناقب الأنصار – باب المعراج": "Livre des mérites des Ansār – Chapitre sur le Miʿrāj",
+  "كتاب مناقب الأنصار – باب هجرة النبي ﷺ": "Livre des mérites des Ansār – Chapitre sur l'Hégire du Prophète ﷺ",
+  "كتاب مناقب الأنصار – تزويج النبي ﷺ خديجة": "Livre des mérites des Ansār – Le mariage du Prophète ﷺ avec Khadīja",
+  "كتاب مناقب الأنصار – قصة أبي طالب": "Livre des mérites des Ansār – L'histoire d'Abū Ṭālib",
+  "مبيت علي على فراش النبي": "ʿAlī dormant dans le lit du Prophète",
+  "مقدمة الطبقات": "Introduction aux Ṭabaqāt",
+  "مواضع متفرقة": "Passages divers",
+  "وفاة أبي طالب": "La mort d'Abū Ṭālib",
+  "وفاة أبي طالب وخديجة": "La mort d'Abū Ṭālib et de Khadīja"
+ }
+}

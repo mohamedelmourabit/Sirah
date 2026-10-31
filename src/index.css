@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-ink: #060d1a;
+  --color-panel: #0a1830;
+  --color-panel2: #0e2140;
+  --color-line: #1c3354;
+  --color-gold: #d9a94a;
+  --color-gold2: #f0cf8a;
+  --color-sky: #3f86d6;
+  --color-jade: #2fb589;
+  --font-display: 'Amiri', serif;
+  --font-sans: 'IBM Plex Sans Arabic', system-ui, sans-serif;
+}
+
+html,
+body {
+  background: radial-gradient(1200px 700px at 70% -10%, #10264a 0%, var(--color-ink) 60%) fixed;
+  color: #e6ecf5;
+  font-family: var(--font-sans);
+}
+
+/* concentric glow rings behind the map */
+.rings {
+  background:
+    radial-gradient(circle, rgba(217, 169, 74, 0.14) 0 6%, transparent 7%),
+    repeating-radial-gradient(circle, transparent 0 11.5%, rgba(63, 134, 214, 0.18) 11.7% 12%);
+}
+.scroll-thin::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: var(--color-line);
+  border-radius: 9px;
+}
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}

@@ -1,0 +1,200 @@
+{
+  "app": {
+    "title": "La Biografía del Profeta",
+    "tagline": "Un viaje a través del tiempo y los personajes",
+    "slogan": "La Sira … nuestra historia, nuestra identidad"
+  },
+  "nav": {
+    "label": "Navegación",
+    "home": "Inicio",
+    "timeline": "Cronología",
+    "map": "Mapa de relaciones",
+    "people": "Compañeros",
+    "events": "Acontecimientos",
+    "places": "Lugares",
+    "sources": "Fuentes",
+    "browse": "Explorar"
+  },
+  "progress": {
+    "yours": "Tu progreso",
+    "count": "{{n}} / {{total}} vistos",
+    "new": "Nuevo",
+    "viewed": "Visto"
+  },
+  "search": {
+    "placeholder": "Busca un compañero, un acontecimiento o un lugar...",
+    "aria": "Búsqueda general",
+    "empty": "Sin resultados",
+    "clear": "Borrar búsqueda",
+    "noResults": "No se encontraron resultados",
+    "noResultsHint": "Pruebe otra ortografía, una palabra más corta o el nombre en árabe (p. ej. عمر, Omar, Umar).",
+    "didYouMean": "¿Quiso decir:",
+    "alsoKnown": "También conocido como: {{name}}",
+    "count_one": "{{count}} resultado",
+    "count_other": "{{count}} resultados",
+    "hint": "↑↓ navegar · Enter abrir · Esc cerrar"
+  },
+  "account": {
+    "browse": "Explorar sin cuenta",
+    "title": "Cuenta opcional",
+    "desc": "La cuenta solo sirve para sincronizar tu progreso entre dispositivos. Todo el contenido está disponible sin cuenta.",
+    "off": "La sincronización no está activada. Añade VITE_SUPABASE_URL y VITE_SUPABASE_ANON_KEY en el archivo .env.",
+    "signedAs": "Sesión iniciada como:",
+    "signOut": "Cerrar sesión",
+    "email": "Tu correo electrónico",
+    "send": "Enviar enlace de acceso",
+    "sent": "El enlace de acceso se ha enviado a tu correo.",
+    "continue": "Continuar sin cuenta"
+  },
+  "map": {
+    "aria": "Mapa interactivo de relaciones",
+    "canvas": "Mapa de relaciones",
+    "center": "Muhammad ﷺ",
+    "discoverTitle": "Descubre la Sira",
+    "discoverText": "Explora los acontecimientos y los compañeros a través del mapa circular. Pulsa cualquier nodo.",
+    "hint": "Arrastra para mover el mapa · rueda del ratón para hacer zoom",
+    "zoomIn": "Acercar",
+    "zoomOut": "Alejar",
+    "fit": "Ajustar",
+    "filter": "Filtros",
+    "events": "Acontecimientos",
+    "people": "Compañeros",
+    "places": "Lugares",
+    "relations": "Relaciones",
+    "periods": "Períodos principales",
+    "all": "Todo",
+    "zoomHint": "Acerque para ver todas las etiquetas; seleccione un círculo para ver sus relaciones directas."
+  },
+  "kinds": {
+    "person": "Compañero / personaje",
+    "event": "Acontecimiento",
+    "place": "Lugar",
+    "group": "Grupo"
+  },
+  "periods": {
+    "pre": "Antes de la revelación",
+    "mecca": "Período mecano",
+    "hijra": "La Hégira",
+    "medina": "Período medinés"
+  },
+  "timeline": {
+    "title": "Cronología",
+    "viewAll": "Ver todo →"
+  },
+  "directory": {
+    "placeholder": "Buscar por nombre o palabra clave...",
+    "aria": "Búsqueda",
+    "results_one": "{{count}} resultado",
+    "results_other": "{{count}} resultados",
+    "all": "Todo"
+  },
+  "detail": {
+    "close": "Cerrar",
+    "bio": "Biografía",
+    "context": "Contexto histórico",
+    "sources": "Fuentes",
+    "related": "Relacionado",
+    "showMap": "Ver en el mapa",
+    "showTimeline": "En la cronología"
+  },
+  "sourcesPage": {
+    "legend": "El estado de verificación histórica es independiente del estado de traducción. Los cuatro estados:"
+  },
+  "features": [
+    {
+      "icon": "🗺",
+      "title": "Mapa interactivo",
+      "desc": "Explora los acontecimientos y los compañeros mediante círculos y relaciones."
+    },
+    {
+      "icon": "📅",
+      "title": "Cronología completa",
+      "desc": "Desde antes de la revelación hasta la muerte del Profeta ﷺ, con los hechos principales."
+    },
+    {
+      "icon": "🔎",
+      "title": "Búsqueda avanzada",
+      "desc": "Entre compañeros, acontecimientos, lugares y fuentes."
+    },
+    {
+      "icon": "👤",
+      "title": "Sin cuenta",
+      "desc": "Navega directamente y con total libertad."
+    },
+    {
+      "icon": "🔒",
+      "title": "Cuenta opcional",
+      "desc": "Para guardar tu progreso y sincronizarlo entre dispositivos."
+    }
+  ],
+  "lang": {
+    "label": "Idioma"
+  },
+  "verification": {
+    "title": "Verificación histórica",
+    "reviewedBy": "Revisado por {{by}} · {{at}}",
+    "diffNote": "Nota sobre relatos divergentes",
+    "diffNoteHint": "Nota presente en los datos; aún sin revisar.",
+    "VERIFIED": {
+      "label": "Verificado",
+      "desc": "Respaldado por fuentes fiables que han sido revisadas."
+    },
+    "DISPUTED": {
+      "label": "Discutido",
+      "desc": "Los relatos históricos o las opiniones de los eruditos difieren."
+    },
+    "UNCERTAIN": {
+      "label": "Incierto",
+      "desc": "Pruebas insuficientes para establecer la afirmación."
+    },
+    "PENDING_REVIEW": {
+      "label": "Pendiente de revisión",
+      "desc": "Aún no revisado por un revisor cualificado; no debe considerarse verificado."
+    },
+    "refs": "Referencias de apoyo"
+  },
+  "tr": {
+    "pillOriginal": "Texto árabe original",
+    "pillApproved": "Traducción aprobada",
+    "pillDraft": "Borrador – Pendiente de revisión",
+    "pillPending": "Texto árabe original – sin traducción aprobada",
+    "reviewedBy": "Traducción revisada por {{by}} · {{at}}",
+    "draftNote": "Borrador de traducción aún sin revisar; la referencia sigue siendo el texto árabe original.",
+    "viewOriginal": "Ver el texto árabe original",
+    "viewTranslation": "Ver la traducción",
+    "tagAr": "AR",
+    "tagDraft": "Borrador",
+    "bar": "{{n}} de {{total}} fichas tienen traducción aprobada. En las demás se muestra el texto árabe original.",
+    "barDraft": "Vista previa de borradores de traducción – Borrador – Pendiente de revisión. Sin revisar; la referencia sigue siendo el texto árabe original.",
+    "preview": "Ver borradores de traducción",
+    "back": "Volver al árabe original"
+  },
+  "cat": {
+    "person": "Compañeros y personajes",
+    "event": "Acontecimientos",
+    "place": "Lugares",
+    "period": "Períodos históricos"
+  },
+  "view": {
+    "label": "Modo de vista",
+    "map": "Mapa de relaciones",
+    "list": "Vista de lista"
+  },
+  "browse": {
+    "sort": "Orden",
+    "sortChrono": "Cronológico",
+    "sortName": "Nombre",
+    "sortUnread": "Nuevos primero",
+    "sortVerification": "Estado de verificación",
+    "reading": "Lectura",
+    "verification": "Verificación",
+    "period": "Período",
+    "type": "Tipo",
+    "all": "Todo",
+    "entries_one": "{{count}} ficha",
+    "entries_other": "{{count}} fichas",
+    "empty": "Ninguna ficha coincide con estos filtros.",
+    "reset": "Restablecer filtros",
+    "showPeriod": "Ver fichas de este período"
+  }
+}
