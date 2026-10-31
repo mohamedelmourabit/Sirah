@@ -1,0 +1,187 @@
+{
+  "translation": {
+    "status": "draft"
+  },
+  "verification": {
+    "status": "PENDING_REVIEW"
+  },
+  "title": "Abū Bakr al-Ṣiddīq (may God be pleased with him)",
+  "subtitle": "Companion of the Prophet ﷺ in the cave and first of the Rightly Guided Caliphs",
+  "sections": {
+    "identity": "Name, lineage and family",
+    "early": "Early life and character",
+    "conversion": "Acceptance of Islam",
+    "prophet": "Relationship with the Prophet ﷺ",
+    "hijra": "His role in the Hijra",
+    "lifetime": "Contributions during the Prophet’s lifetime",
+    "aftermath": "His role after the Prophet’s death",
+    "caliphate": "Caliphate and major events",
+    "death": "Death",
+    "legacy": "Legacy"
+  },
+  "facts": {
+    "name": {
+      "label": "Full name",
+      "value": "ʿAbd Allāh ibn ʿUthmān (Abū Quḥāfa) ibn ʿĀmir ibn ʿAmr ibn Kaʿb ibn Saʿd ibn Taym ibn Murra ibn Kaʿb ibn Luʾayy al-Qurashī al-Taymī"
+    },
+    "kunya": {
+      "label": "Kunya and epithets",
+      "value": "Abū Bakr; among his epithets are al-Ṣiddīq and ʿAtīq"
+    },
+    "clan": {
+      "label": "Tribe and clan",
+      "value": "Quraysh — Banū Taym"
+    },
+    "birth": {
+      "label": "Birth",
+      "value": "In Makkah, about two or three years after the Year of the Elephant according to some reports"
+    },
+    "caliphate": {
+      "label": "Caliphate",
+      "value": "From 11 AH (632 CE) to 13 AH (634 CE)"
+    },
+    "death": {
+      "label": "Death",
+      "value": "Jumādā al-Ākhira 13 AH (634 CE), in Madinah"
+    },
+    "burial": {
+      "label": "Burial",
+      "value": "In the chamber of ʿĀʾisha, beside the Prophet ﷺ"
+    }
+  },
+  "claims": {
+    "identity.lineage": "Abū Bakr belonged to the Quraysh, from the clan of Banū Taym ibn Murra; his lineage meets that of the Prophet ﷺ at Murra ibn Kaʿb.",
+    "identity.name": "His name was ʿAbd Allāh ibn ʿUthmān ibn ʿĀmir, whose father was known as Abū Quḥāfa; his kunya is Abū Bakr.",
+    "identity.preislamic": "Some reports say that his name in the pre-Islamic period was ʿAbd al-Kaʿba and that the Prophet ﷺ named him ʿAbd Allāh; the reports differ on this.",
+    "identity.siddiq": "He was given the epithet al-Ṣiddīq; reports differ on the reason and on who first called him so, and it is said that it was for his readiness to believe the Prophet ﷺ.",
+    "identity.atiq": "It is also said that he was called ʿAtīq; the reports give several explanations for this epithet.",
+    "identity.parents": "His mother was Salmā bint Ṣakhr, known as Umm al-Khayr, and his father ʿUthmān, known as Abū Quḥāfa, who accepted Islam on the day of the Conquest of Makkah.",
+    "early.birth": "He was born in Makkah about two or three years after the Year of the Elephant according to some reports; the reports differ on the exact year.",
+    "early.trade": "Among the Quraysh he was known as a merchant and held a position of standing in his community before Islam.",
+    "early.character": "The sources describe him as trustworthy, of good character and gentle, and well liked by his people.",
+    "early.dughna": "Sahih al-Bukhari reports that Ibn al-Dughna gave him protection when he set out to emigrate to Abyssinia, and testified to his kindness, his care for relatives and his help for the needy.",
+    "conv.early": "He was among the earliest to accept Islam.",
+    "conv.first": "Reports differ on who accepted Islam first: some say Abū Bakr was the first free adult man, others name ʿAlī ibn Abī Ṭālib or Zayd ibn Ḥāritha, and some say Khadīja was the first of all; some scholars reconcile these by distinguishing categories.",
+    "conv.dawah": "Ibn Isḥāq reports that a number of prominent Companions accepted Islam through his call, among them ʿUthmān ibn ʿAffān and ʿAbd al-Raḥmān ibn ʿAwf.",
+    "conv.freed": "He bought and freed a number of vulnerable people who were tortured for their faith, among them Bilāl ibn Rabāḥ.",
+    "proph.closeness": "He was among the closest Companions of the Prophet ﷺ, and the hadith collections devote dedicated chapters to his merit and closeness to him.",
+    "proph.aisha": "He gave his daughter ʿĀʾisha in marriage to the Prophet ﷺ, becoming his father-in-law.",
+    "proph.isra": "A story is told that he immediately believed the account of the Night Journey; the reports vary in their chains and details, and some narrators link it to his epithet al-Ṣiddīq.",
+    "proph.hudaybiyyah": "At al-Ḥudaybiya, ʿUmar put to him the questions he had put to the Prophet ﷺ, and Abū Bakr answered by urging adherence to the Prophet’s course.",
+    "proph.battles": "He took part with the Prophet ﷺ in Badr, Uḥud, the Trench, al-Ḥudaybiya, the Conquest of Makkah and the other campaigns.",
+    "hijra.companion": "He accompanied the Prophet ﷺ on the emigration from Makkah to Madinah and was his companion in the cave; Sūrat al-Tawba refers to the two of them being in the cave.",
+    "hijra.prep": "In her account of the Hijra, ʿĀʾisha reports that her father had prepared two mounts for the journey, and that the Prophet ﷺ came to them at an unusual hour to tell him that permission to emigrate had been given.",
+    "hijra.family": "His family helped with the Hijra: his son ʿAbd Allāh brought news of the Quraysh and his daughter Asmāʾ carried provisions.",
+    "life.imam": "During the Prophet’s final illness he told Abū Bakr to lead the people in prayer, and Abū Bakr led them in his last days.",
+    "life.hajj": "The Prophet ﷺ sent him as leader of the pilgrimage in the year before the Farewell Pilgrimage, and it was proclaimed that after that year no polytheist would perform the pilgrimage and no one would circle the House naked.",
+    "life.wealth": "The reports agree that he spent his wealth in support of the message and in freeing the vulnerable.",
+    "after.speech": "When the Prophet ﷺ died, Abū Bakr entered, kissed him, then went out and addressed the people, affirming that Muḥammad ﷺ had died and that God is ever-living, and recited a verse from Sūrat Āl ʿImrān.",
+    "after.saqifa": "The Anṣār gathered in the Saqīfa of Banū Sāʿida; Abū Bakr, ʿUmar and Abū ʿUbayda ibn al-Jarrāḥ attended, and the outcome was the pledge of allegiance to Abū Bakr.",
+    "after.ali": "Reports differ on when ʿAlī ibn Abī Ṭālib pledged allegiance to Abū Bakr: in some it was about six months later, after the death of Fāṭima, while other reports place it early on.",
+    "cal.start": "He became caliph in 11 AH (632 CE) and was called Khalīfat Rasūl Allāh (successor of the Messenger of God ﷺ).",
+    "cal.length": "His caliphate lasted about two years and a few months; reports differ on the exact length.",
+    "cal.usama": "He dispatched the army of Usāma ibn Zayd that the Prophet ﷺ had prepared, although some Companions objected.",
+    "cal.ridda": "He fought those who renounced Islam and those who withheld zakāh, and the armies were led by commanders including Khālid ibn al-Walīd.",
+    "cal.zakat": "On the question of fighting those who withheld zakāh, ʿUmar questioned him and later came round to his view, convinced that he was right.",
+    "cal.yamama": "Musaylima the Liar was killed at the Battle of al-Yamāma, in which a large number of Qurʾān reciters were martyred.",
+    "cal.quran": "After al-Yamāma, ʿUmar proposed collecting the Qurʾān; Abū Bakr tasked Zayd ibn Thābit with gathering it in sheets, which were kept by Abū Bakr, then ʿUmar, then Ḥafṣa.",
+    "cal.conquests": "The campaigns towards Iraq and al-Shām began during his rule, with Khālid ibn al-Walīd among the commanders.",
+    "cal.successor": "He designated ʿUmar ibn al-Khaṭṭāb as his successor after consulting senior Companions.",
+    "cal.uthman": "The reports mention that ʿUthmān ibn ʿAffān wrote the document of succession.",
+    "death.illness": "Reports vary on the cause of his final illness: some mention a fever after bathing on a cold day, others mention poison.",
+    "death.date": "He died in Jumādā al-Ākhira 13 AH (634 CE) in Madinah; reports differ on the exact day.",
+    "death.age": "It is widely reported that he died aged sixty-three, the same age as the Prophet ﷺ at his death; other reports exist.",
+    "death.burial": "He was buried in the chamber of ʿĀʾisha beside the Prophet ﷺ.",
+    "leg.first": "He is counted as the first of the Rightly Guided Caliphs, and hadith scholars and historians devote dedicated chapters to his merits and accounts.",
+    "leg.unity": "In the Islamic tradition his caliphate is regarded as having preserved the unity of the Muslims after the Prophet’s death ﷺ."
+  },
+  "journey": {
+    "birth": {
+      "label": "Birth",
+      "when": "About 2–3 years after the Year of the Elephant (some reports)"
+    },
+    "conversion": {
+      "label": "Acceptance of Islam",
+      "when": "Early in the mission (reports differ on the order of conversions)"
+    },
+    "hijra": {
+      "label": "Emigration with the Prophet ﷺ",
+      "when": "1 AH / 622 CE"
+    },
+    "badr": {
+      "label": "Battle of Badr",
+      "when": "2 AH / 624 CE"
+    },
+    "uhud": {
+      "label": "Battle of Uḥud",
+      "when": "3 AH / 625 CE"
+    },
+    "hudaybiyyah": {
+      "label": "Treaty of al-Ḥudaybiya",
+      "when": "6 AH / 628 CE"
+    },
+    "fath": {
+      "label": "Conquest of Makkah",
+      "when": "8 AH / 630 CE"
+    },
+    "hajj": {
+      "label": "Leads the pilgrimage",
+      "when": "9 AH / 631 CE"
+    },
+    "prophet_death": {
+      "label": "Death of the Prophet ﷺ",
+      "when": "11 AH / 632 CE"
+    },
+    "saqifa": {
+      "label": "Saqīfa and pledge of allegiance",
+      "when": "11 AH / 632 CE"
+    },
+    "ridda": {
+      "label": "Wars against apostasy and withheld zakāh",
+      "when": "11–12 AH / 632–633 CE"
+    },
+    "yamama": {
+      "label": "Battle of al-Yamāma",
+      "when": "12 AH / 633 CE (some say 11 AH)"
+    },
+    "quran": {
+      "label": "Collection of the Qurʾān in sheets",
+      "when": "After al-Yamāma (exact date not fixed)"
+    },
+    "death": {
+      "label": "Death",
+      "when": "Jumādā al-Ākhira 13 AH / 634 CE"
+    }
+  },
+  "refs": {
+    "ترجمة أبي بكر الصديق": "Biography of Abū Bakr al-Ṣiddīq",
+    "ترجمة أبي بكر الصديق في الإصابة": "Entry on Abū Bakr al-Ṣiddīq",
+    "ذكر إسلام أبي بكر الصديق": "Account of the conversion of Abū Bakr al-Ṣiddīq",
+    "ذكر هجرة رسول الله ﷺ إلى المدينة": "Account of the emigration of the Messenger of God ﷺ to Madinah",
+    "كتاب فضائل الصحابة، باب فضل أبي بكر بعد النبي ﷺ": "Book of the Virtues of the Companions, chapter: the merit of Abū Bakr after the Prophet ﷺ",
+    "كتاب مناقب الأنصار، باب هجرة النبي ﷺ وأصحابه إلى المدينة": "Book of the Merits of the Anṣār, chapter: the emigration of the Prophet ﷺ and his Companions to Madinah",
+    "كتاب الشروط، باب الشروط في الجهاد والمصالحة": "Book of Conditions, chapter: conditions in jihad and in treaties",
+    "كتاب الأذان، باب أهل العلم والفضل أحق بالإمامة": "Book of the Call to Prayer, chapter: people of knowledge and merit have most right to lead the prayer",
+    "كتاب الحج، باب لا يطوف بالبيت عريان ولا يحج مشرك": "Book of Pilgrimage, chapter: no one may circle the House naked and no polytheist may perform the pilgrimage",
+    "كتاب المغازي، باب مرض النبي ﷺ ووفاته": "Book of the Campaigns, chapter: the illness and death of the Prophet ﷺ",
+    "كتاب المغازي، باب غزوة خيبر": "Book of the Campaigns, chapter: the campaign of Khaybar",
+    "كتاب الزكاة، باب وجوب الزكاة": "Book of Zakāh, chapter: the obligation of zakāh",
+    "كتاب فضائل القرآن، باب جمع القرآن": "Book of the Virtues of the Qurʾān, chapter: the collection of the Qurʾān",
+    "سورة التوبة: 40": "Sūrat al-Tawba 9:40",
+    "حوادث سنة 11هـ: خبر السقيفة": "Events of 11 AH: the account of the Saqīfa",
+    "حوادث سنتي 11–12هـ: الردة واليمامة": "Events of 11–12 AH: the apostasy wars and al-Yamāma",
+    "حوادث سنة 13هـ: وفاة أبي بكر واستخلاف عمر": "Events of 13 AH: the death of Abū Bakr and the succession of ʿUmar",
+    "خلافة أبي بكر الصديق": "The caliphate of Abū Bakr al-Ṣiddīq"
+  },
+  "books": {
+    "صحيح البخاري": "Sahih al-Bukhari",
+    "السيرة النبوية — ابن هشام": "The Prophetic Biography — Ibn Hishām",
+    "البداية والنهاية — ابن كثير": "The Beginning and the End — Ibn Kathīr",
+    "صحيح مسلم": "Sahih Muslim",
+    "القرآن الكريم": "The Noble Qurʾān",
+    "الرحيق المختوم — المباركفوري": "The Sealed Nectar — al-Mubārakfūrī",
+    "الطبقات الكبرى — ابن سعد": "The Great Classes — Ibn Saʿd",
+    "تاريخ الرسل والملوك — الطبري": "History of the Messengers and Kings — al-Ṭabarī",
+    "الإصابة في تمييز الصحابة — ابن حجر": "al-Iṣāba fī Tamyīz al-Ṣaḥāba — Ibn Ḥajar"
+  }
+}

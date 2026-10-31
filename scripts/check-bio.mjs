@@ -7,8 +7,14 @@ import { build } from 'esbuild'
 
 const dir = mkdtempSync(join(tmpdir(), 'sira-bio-'))
 const out = join(dir, 'm.mjs')
-await build({ stdin: { contents: "export { BIOS } from './src/bio/index.ts'; export { SAMPLE } from './src/data.ts'", resolveDir: process.cwd() }, bundle: true, format: 'esm', outfile: out, loader: { '.json': 'json' }, logLevel: 'silent' })
-const { BIOS, SAMPLE } = await import(out)
+const files = readdirSync('src/bio').filter((f) => f.endsWith('.ts') && !['index.ts', 'types.ts'].includes(f))
+const entry = files.map((f, i) => `export * as m${i} from './src/bio/${f}'`).join(';') + "; export { SAMPLE } from './src/data.ts'"
+await build({ stdin: { contents: entry, resolveDir: process.cwd() }, bundle: true, format: 'esm', outfile: out, loader: { '.json': 'json' }, logLevel: 'silent' })
+const mod = await import(out)
+const { SAMPLE } = mod
+const BIOS = Object.fromEntries(files.map((_, i) => Object.values(mod[`m${i}`]).map((def) => [def.id, { def }])[0]))
+const registry = readFileSync('src/bio/index.ts', 'utf8')
+for (const id of Object.keys(BIOS)) assert.ok(new RegExp(`\\b${id}: entry\\(${id}\\)`).test(registry), `${id}: not registered in src/bio/index.ts`)
 const ids = new Set(SAMPLE.map((e) => e.id))
 const LANGS = ['ar', 'fr', 'en', 'es'], CERT = ['established', 'disputed', 'uncertain'], PERIODS = ['pre', 'mecca', 'hijra', 'medina']
 const AR = /[؀-ۿ]/
@@ -51,4 +57,4 @@ for (const [id, { def }] of Object.entries(BIOS)) {
   console.log(`${id}: ${claims.length} claims (${CERT.map((c) => `${claims.filter((x) => x.certainty === c).length} ${c}`).join(', ')}), ${Object.keys(def.sources).length} sources, ${links.size} linked entities, 4 languages OK`)
   n++
 }
-console.log(`bio OK (${n} biography)`)
+console.log(`bio OK (${n} biographies)`)
