@@ -1,0 +1,158 @@
+{
+  "translation": {
+    "status": "draft"
+  },
+  "verification": {
+    "status": "PENDING_REVIEW"
+  },
+  "title": "ʿUmar ibn al-Khaṭṭāb (que Dieu l’agrée)",
+  "subtitle": "al-Fārūq, deuxième calife bien guidé",
+  "sections": {
+    "identity": "Nom et généalogie",
+    "early": "Famille et jeunesse",
+    "conversion": "Conversion à l’islam",
+    "prophet": "Relation avec le Prophète ﷺ",
+    "events": "Événements et moments majeurs",
+    "companions": "Relations avec les autres Compagnons",
+    "caliphate": "Califat et réalisations",
+    "death": "Mort",
+    "legacy": "Héritage"
+  },
+  "facts": {
+    "name": {
+      "label": "Nom complet",
+      "value": "ʿUmar ibn al-Khaṭṭāb ibn Nufayl ibn ʿAbd al-ʿUzzā ibn Riyāḥ ibn ʿAbd Allāh ibn Qurṭ ibn Razāḥ ibn ʿAdī ibn Kaʿb ibn Luʾayy al-Qurashī al-ʿAdawī"
+    },
+    "kunya": {
+      "label": "Kunya et surnom",
+      "value": "Abū Ḥafṣ ; son surnom est al-Fārūq"
+    },
+    "clan": {
+      "label": "Tribu et clan",
+      "value": "Quraych — Banū ʿAdī"
+    },
+    "birth": {
+      "label": "Naissance",
+      "value": "À La Mecque, environ treize ans après l’Année de l’Éléphant selon certains récits"
+    },
+    "death": {
+      "label": "Décès",
+      "value": "Dhū al-Ḥijja 23 de l’Hégire (644), à Médine"
+    },
+    "burial": {
+      "label": "Sépulture",
+      "value": "Dans la chambre de ʿĀʾisha, auprès du Prophète ﷺ et d’Abū Bakr"
+    }
+  },
+  "claims": {
+    "identity.lineage": "ʿUmar appartenait aux Quraych, du clan des Banū ʿAdī ibn Kaʿb ; sa généalogie rejoint celle du Prophète ﷺ en Kaʿb ibn Luʾayy.",
+    "identity.names": "Sa kunya, Abū Ḥafṣ, renvoie à sa fille Ḥafṣa ; son surnom est al-Fārūq.",
+    "identity.mother": "La plupart des récits nomment sa mère Ḥantama bint Hāshim ibn al-Mughīra, des Makhzūm ; d’autres la disent fille de Hishām ibn al-Mughīra. Les généalogistes divergent sur le nom de son père.",
+    "identity.amir": "Il fut le premier à être appelé « Amīr al-Muʾminīn » (Commandeur des croyants) en islam.",
+    "early.birth": "Il naquit à La Mecque environ treize ans après l’Année de l’Éléphant selon certains récits ; ceux-ci divergent sur l’année exacte de sa naissance.",
+    "early.clan": "Il grandit parmi les Banū ʿAdī, clan respecté des Quraych, dont l’une des charges était de représenter les Quraych comme émissaires auprès des autres.",
+    "early.work": "Certains récits mentionnent que, jeune, il gardait les chameaux de son père ; ces récits n’ont pas encore été vérifiés.",
+    "conv.islam": "ʿUmar embrassa l’islam à La Mecque après s’être fortement opposé au nouveau message, et devint l’un des musulmans les plus en vue.",
+    "conv.date": "La plupart des récits situent sa conversion dans la sixième année de la mission, après celle de Ḥamza ; d’autres divergent sur l’année.",
+    "conv.story": "La tradition biographique rapporte qu’il embrassa l’islam après avoir rendu visite à sa sœur Fāṭima et à son mari Saʿīd ibn Zayd, et lu une page contenant la sourate Ṭā-Hā ; les récits diffèrent dans leurs détails et dans leur degré d’authenticité selon les spécialistes du hadith.",
+    "proph.closeness": "ʿUmar était l’un des Compagnons les plus proches du Prophète ﷺ ; son nom est souvent associé à celui d’Abū Bakr dans les récits de compagnonnage et de conseil.",
+    "proph.hafsa": "Le Prophète ﷺ épousa Ḥafṣa bint ʿUmar ; ʿUmar devint ainsi le beau-père du Prophète.",
+    "proph.battles": "Il prit part avec le Prophète ﷺ à Badr, Uḥud, la bataille du Fossé, la conquête de La Mecque et les autres expéditions.",
+    "proph.hudaybiyyah": "Lors du traité d’al-Ḥudaybiya, ʿUmar interrogea le Prophète ﷺ sur les clauses ; il aurait ensuite accompli de bonnes œuvres à ce sujet.",
+    "proph.death": "À la mort du Prophète ﷺ, ʿUmar nia d’abord son décès, puis s’apaisa lorsqu’Abū Bakr s’adressa aux gens et récita un verset de la sourate Āl ʿImrān.",
+    "events.hijra": "ʿUmar émigra à Médine avant le Prophète ﷺ, au sein d’un groupe d’émigrés.",
+    "events.badr": "À Badr, ʿUmar conseilla de mettre à mort les prisonniers tandis qu’Abū Bakr conseilla d’accepter une rançon ; une révélation vint ensuite à propos des prisonniers.",
+    "comp.abubakr": "ʿUmar prêta allégeance à Abū Bakr à la Saqīfa et fut l’un de ses plus proches collaborateurs ; Abū Bakr le désigna ensuite comme successeur.",
+    "comp.khalid": "Devenu calife, ʿUmar releva Khālid ibn al-Walīd du commandement de l’armée du Shām ; les récits et les avis divergent sur les raisons.",
+    "comp.shura": "Après avoir été poignardé, ʿUmar confia le choix du successeur à un conseil de six : ʿUthmān, ʿAlī, Ṭalḥa, al-Zubayr, ʿAbd al-Raḥmān ibn ʿAwf et Saʿd ibn Abī Waqqāṣ.",
+    "cal.start": "Il devint calife en 13 de l’Hégire (634) à la mort d’Abū Bakr, et son califat dura environ dix ans.",
+    "cal.conquests": "Sous son autorité, les conquêtes s’étendirent au Shām, à l’Irak, à l’Égypte et à une partie de la Perse.",
+    "cal.jerusalem": "Il conclut un traité avec les habitants d’Aelia (Jérusalem) et s’y rendit pour recevoir la ville.",
+    "cal.admin": "Il organisa les registres (dīwān) et fixa des soldes pour les combattants, fonda des villes de garnison comme Bassora et Koufa, et nomma des gouverneurs en leur demandant des comptes.",
+    "cal.calendar": "On lui attribue le début de la datation à partir de l’Hégire ; les récits divergent sur l’année et sur les détails de la consultation.",
+    "cal.taraweeh": "Il réunit les gens, pendant le ramadan, derrière un seul imam à la mosquée pour la prière des tarāwīḥ : Ubayy ibn Kaʿb.",
+    "death.attack": "Il fut poignardé par Abū Luʾluʾa (Fīrūz), esclave persan d’al-Mughīra ibn Shuʿba, alors qu’il dirigeait la prière de l’aube dans la mosquée du Prophète.",
+    "death.date": "Cela eut lieu à la fin de Dhū al-Ḥijja 23 de l’Hégire (644) ; les récits divergent sur le jour exact et sur le nombre de jours qu’il vécut après l’attaque.",
+    "death.age": "Les récits divergent sur son âge au moment de sa mort ; de nombreux narrateurs avancent environ soixante-trois ans.",
+    "death.burial": "Il demanda à ʿĀʾisha la permission d’être enterré auprès du Prophète ﷺ et d’Abū Bakr ; elle l’accorda, et il fut enterré dans sa chambre.",
+    "leg.second": "Il est compté comme le deuxième des califes bien guidés, et les spécialistes du hadith et les historiens lui consacrent des chapitres dédiés à ses mérites et à ses récits.",
+    "leg.justice": "Dans la mémoire islamique, il demeure un exemple proverbial de justice et de reddition de comptes des gouverneurs."
+  },
+  "journey": {
+    "birth": {
+      "label": "Naissance",
+      "when": "Environ 13 ans après l’Année de l’Éléphant (certains récits)"
+    },
+    "conversion": {
+      "label": "Conversion",
+      "when": "6e année de la mission (la plupart des récits)"
+    },
+    "hijra": {
+      "label": "Émigration à Médine",
+      "when": "1 de l’Hégire / 622"
+    },
+    "badr": {
+      "label": "Bataille de Badr",
+      "when": "2 de l’Hégire / 624"
+    },
+    "uhud": {
+      "label": "Bataille d’Uḥud",
+      "when": "3 de l’Hégire / 625"
+    },
+    "khandaq": {
+      "label": "Bataille du Fossé",
+      "when": "5 de l’Hégire / 627 (certains disent 4)"
+    },
+    "hudaybiyyah": {
+      "label": "Traité d’al-Ḥudaybiya",
+      "when": "6 de l’Hégire / 628"
+    },
+    "fath": {
+      "label": "Conquête de La Mecque",
+      "when": "8 de l’Hégire / 630"
+    },
+    "prophet_death": {
+      "label": "Mort du Prophète ﷺ",
+      "when": "11 de l’Hégire / 632"
+    },
+    "caliphate": {
+      "label": "Devient calife",
+      "when": "13 de l’Hégire / 634"
+    },
+    "jerusalem": {
+      "label": "Traité d’Aelia (Jérusalem)",
+      "when": "15–16 de l’Hégire / 636–637 (les récits divergent)"
+    },
+    "death": {
+      "label": "Mort",
+      "when": "Dhū al-Ḥijja 23 de l’Hégire / 644"
+    }
+  },
+  "refs": {
+    "ذكر إسلام عمر بن الخطاب": "Récit de la conversion de ʿUmar ibn al-Khaṭṭāb",
+    "ترجمة عمر بن الخطاب": "Notice biographique de ʿUmar ibn al-Khaṭṭāb",
+    "كتاب فضائل الصحابة، باب مناقب عمر بن الخطاب": "Livre des mérites des Compagnons, chapitre : les mérites de ʿUmar ibn al-Khaṭṭāb",
+    "كتاب الشروط، باب الشروط في الجهاد والمصالحة": "Livre des conditions, chapitre : les conditions dans le jihad et les traités",
+    "كتاب مناقب الأنصار، باب مقدم النبي ﷺ وأصحابه إلى المدينة": "Livre des mérites des Anṣār, chapitre : l’arrivée du Prophète ﷺ et de ses Compagnons à Médine",
+    "كتاب المغازي، باب مرض النبي ﷺ ووفاته": "Livre des expéditions, chapitre : la maladie et la mort du Prophète ﷺ",
+    "كتاب فضائل الصحابة، باب قصة البيعة والاتفاق على عثمان": "Livre des mérites des Compagnons, chapitre : le récit de l’allégeance et de l’accord sur ʿUthmān",
+    "كتاب صلاة التراويح، باب فضل من قام رمضان": "Livre de la prière des tarāwīḥ, chapitre : le mérite de la prière nocturne du ramadan",
+    "كتاب الجهاد والسير، باب الإمداد بالملائكة في غزوة بدر": "Livre du jihad et des expéditions, chapitre : le renfort des anges à Badr",
+    "خلافة عمر بن الخطاب": "Le califat de ʿUmar ibn al-Khaṭṭāb",
+    "حوادث سنة 11هـ: خبر السقيفة": "Événements de l’an 11 : le récit de la Saqīfa",
+    "حوادث سنة 23هـ: مقتل عمر": "Événements de l’an 23 : l’assassinat de ʿUmar",
+    "حوادث السنوات 15–17هـ: بيت المقدس والتأريخ": "Événements des années 15–17 : Jérusalem et le début de la datation",
+    "ترجمة عمر بن الخطاب في الإصابة": "Notice sur ʿUmar ibn al-Khaṭṭāb"
+  },
+  "books": {
+    "صحيح البخاري": "Sahih al-Bukhari",
+    "السيرة النبوية — ابن هشام": "La Biographie prophétique — Ibn Hishām",
+    "البداية والنهاية — ابن كثير": "Le Commencement et la Fin — Ibn Kathīr",
+    "صحيح مسلم": "Sahih Muslim",
+    "القرآن الكريم": "Le Noble Coran",
+    "الرحيق المختوم — المباركفوري": "Le Nectar cacheté — al-Mubārakfūrī",
+    "الطبقات الكبرى — ابن سعد": "Les Grandes Générations — Ibn Saʿd",
+    "تاريخ الرسل والملوك — الطبري": "Histoire des Messagers et des Rois — al-Ṭabarī",
+    "الإصابة في تمييز الصحابة — ابن حجر": "al-Iṣāba fī Tamyīz al-Ṣaḥāba — Ibn Ḥajar"
+  }
+}

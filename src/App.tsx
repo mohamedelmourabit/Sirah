@@ -11,6 +11,8 @@ import Timeline from './Timeline'
 import Directory from './Directory'
 import Detail from './Detail'
 import SearchBox from './SearchBox'
+import BioPage from './BioPage'
+import { hasBio } from './bio'
 import Browse, { ViewToggle } from './Browse'
 import type { Period } from './data'
 
@@ -130,9 +132,11 @@ export default function App() {
   const [base, setAll] = useState(SAMPLE)
   const [packSt, setPackSt] = useState<{ lang: string; p: Pack | null }>({ lang: 'ar', p: null })
   const pack = packSt.lang === (i18n.resolvedLanguage ?? 'ar') ? packSt.p : null // never apply another language's pack
-  const [view, setView] = useState<View>('home')
+  const [view, setView] = useState<View>(() => (/^#\/bio\/(\w+)/.test(location.hash) && hasBio(location.hash.slice(6)) ? 'bio' : 'home'))
+  const [before, setBefore] = useState<View>('home') // where "Back" from a biography returns to
   const [sel, setSel] = useState<string | null>(null)
   const [drawer, setDrawer] = useState(false)
+  const [bioId, setBioId] = useState<string | null>(() => { const m = location.hash.match(/^#\/bio\/(\w+)/); return m && hasBio(m[1]) ? m[1] : null })
   const [bperiod, setBperiod] = useState<Period | undefined>() // period chosen from search -> list filter
   const [auth, setAuth] = useState(false)
   const { viewed, mark, user } = useProgress()
@@ -157,11 +161,20 @@ export default function App() {
     all, byId, orig, viewed, sel,
     open: (id: string) => { setSel(id); setDrawer(true); mark(id) },
     go: (v: View) => { setView(v); setDrawer(false); scrollTo({ top: 0 }) },
+    readBio: (id: string) => {
+      if (view !== 'bio') setBefore(view)
+      setBioId(id); setView('bio'); setDrawer(false); mark(id); scrollTo({ top: 0 })
+      history.replaceState(null, '', `#/bio/${id}`) // deep link; no router needed
+    },
+    browse: (p?: Period) => { setBperiod(p); setView('browse'); setDrawer(false); scrollTo({ top: 0 }) },
+    drafts, setDrafts,
   }
+  const leaveBio = () => { history.replaceState(null, '', location.pathname + location.search); setView(before); scrollTo({ top: 0 }) }
   // search result -> map highlight + detail drawer (switch to the map unless it is already on screen)
-  const pickEntity = (id: string) => { if (view !== 'home' && view !== 'map') setView('map'); ctx.open(id) }
+  const pickEntity = (id: string) => { if (view !== 'home' && view !== 'map' && view !== 'bio') setView('map'); ctx.open(id) }
   const pickPeriod = (p: Period) => { setBperiod(p); ctx.go('browse') }
-  const title = t(`nav.${view}`)
+  useEffect(() => { if (view === 'bio' && bioId) mark(bioId) }, [view, bioId]) // eslint-disable-line react-hooks/exhaustive-deps
+  const title = view === 'bio' ? byId.get(bioId ?? '')?.name ?? '' : t(`nav.${view}`)
   const pct = Math.round((all.filter((e) => viewed.has(e.id)).length / all.length) * 100)
 
   return (
@@ -233,6 +246,7 @@ export default function App() {
           {view === 'events' && <Directory kind="event" />}
           {view === 'places' && <Directory kind="place" />}
           {view === 'sources' && <Sources />}
+          {view === 'bio' && bioId && <BioPage key={bioId} id={bioId} onBack={leaveBio} />}
         </div>
       </main>
 

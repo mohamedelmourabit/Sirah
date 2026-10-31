@@ -4,10 +4,11 @@ import { useApp } from './ctx'
 import { KIND_COLOR } from './data'
 import { Badge } from './Timeline'
 import { TrPill, TrTag, VerifyBox } from './status'
+import { hasBio } from './bio'
 
 export default function Detail({ onClose }: { onClose: () => void }) {
   const { t, i18n } = useTranslation()
-  const { sel, byId, orig, open, go } = useApp()
+  const { sel, byId, orig, open, go, readBio } = useApp()
   const [showAr, setShowAr] = useState(false)
   useEffect(() => setShowAr(false), [sel]) // each entity opens on the translation again
   const tr = sel ? byId.get(sel) : null
@@ -41,6 +42,7 @@ export default function Detail({ onClose }: { onClose: () => void }) {
             {showAr ? t('tr.viewTranslation') : t('tr.viewOriginal')}
           </button>
         )}
+        {hasBio(e.id) && <button onClick={() => readBio(e.id)} className="mt-3 w-full rounded-lg bg-gold py-2 text-sm font-semibold text-ink hover:bg-gold2">📖 {t('bio.read')}</button>}
         <h2 className="mt-3 font-display text-4xl text-gold2" {...ar}>{e.name}</h2>
         <p className="mt-2 text-slate-200" {...ar}>{e.summary}</p>
 
@@ -59,7 +61,7 @@ export default function Detail({ onClose }: { onClose: () => void }) {
         <h3 className="mb-2 mt-5 text-sm font-semibold text-gold">{t('detail.related')}</h3>
         <div className="flex flex-wrap gap-2">
           {e.rel.map((r) => byId.get(r)).filter(Boolean).map((r) => (
-            <button key={r!.id} onClick={() => open(r!.id)} className="flex items-center gap-1.5 rounded-full border border-line px-3 py-1 text-xs hover:border-gold">
+            <button key={r!.id} onClick={() => (hasBio(r!.id) ? readBio(r!.id) : open(r!.id))} className="flex items-center gap-1.5 rounded-full border border-line px-3 py-1 text-xs hover:border-gold">
               <i className="size-2 rounded-full" style={{ background: KIND_COLOR[r!.kind] }} />{r!.name}<TrTag e={r!} />
             </button>
           ))}

@@ -1,0 +1,158 @@
+{
+  "translation": {
+    "status": "draft"
+  },
+  "verification": {
+    "status": "PENDING_REVIEW"
+  },
+  "title": "ʿUmar ibn al-Khaṭṭāb (may God be pleased with him)",
+  "subtitle": "al-Fārūq, the second Rightly Guided Caliph",
+  "sections": {
+    "identity": "Name and lineage",
+    "early": "Family background and early life",
+    "conversion": "Conversion to Islam",
+    "prophet": "Relationship with the Prophet ﷺ",
+    "events": "Major events and moments",
+    "companions": "Relationships with other Companions",
+    "caliphate": "Caliphate and achievements",
+    "death": "Death",
+    "legacy": "Legacy"
+  },
+  "facts": {
+    "name": {
+      "label": "Full name",
+      "value": "ʿUmar ibn al-Khaṭṭāb ibn Nufayl ibn ʿAbd al-ʿUzzā ibn Riyāḥ ibn ʿAbd Allāh ibn Qurṭ ibn Razāḥ ibn ʿAdī ibn Kaʿb ibn Luʾayy al-Qurashī al-ʿAdawī"
+    },
+    "kunya": {
+      "label": "Kunya and title",
+      "value": "Abū Ḥafṣ; his epithet is al-Fārūq"
+    },
+    "clan": {
+      "label": "Tribe and clan",
+      "value": "Quraysh — Banū ʿAdī"
+    },
+    "birth": {
+      "label": "Birth",
+      "value": "In Makkah, about thirteen years after the Year of the Elephant according to some reports"
+    },
+    "death": {
+      "label": "Death",
+      "value": "Dhū al-Ḥijja 23 AH (644 CE), in Madinah"
+    },
+    "burial": {
+      "label": "Burial",
+      "value": "In the chamber of ʿĀʾisha, beside the Prophet ﷺ and Abū Bakr"
+    }
+  },
+  "claims": {
+    "identity.lineage": "ʿUmar belonged to the Quraysh, from the clan of Banū ʿAdī ibn Kaʿb; his lineage meets that of the Prophet ﷺ at Kaʿb ibn Luʾayy.",
+    "identity.names": "His kunya, Abū Ḥafṣ, refers to his daughter Ḥafṣa; his epithet is al-Fārūq.",
+    "identity.mother": "Most reports name his mother as Ḥantama bint Hāshim ibn al-Mughīra of the Makhzūm; other reports say she was the daughter of Hishām ibn al-Mughīra. Genealogists differ on her father’s name.",
+    "identity.amir": "He was the first to be called “Amīr al-Muʾminīn” (Commander of the Believers) in Islam.",
+    "early.birth": "He was born in Makkah about thirteen years after the Year of the Elephant according to some reports; the reports differ on the exact year of his birth.",
+    "early.clan": "He grew up among the Banū ʿAdī, a clan of standing in Quraysh, whose responsibility included acting as envoys between Quraysh and others.",
+    "early.work": "Some reports mention that in his youth he tended camels for his father; these reports have not yet been reviewed.",
+    "conv.islam": "ʿUmar accepted Islam in Makkah after having strongly opposed the new message, and became one of the most prominent Muslims.",
+    "conv.date": "Most reports place his conversion in the sixth year of the mission, after that of Ḥamza; other reports differ on the year.",
+    "conv.story": "The biographical tradition tells that he accepted Islam after visiting his sister Fāṭima and her husband Saʿīd ibn Zayd and reading a page containing Sūrat Ṭā-Hā; the reports differ in their details and in how firmly hadith scholars consider them established.",
+    "proph.closeness": "ʿUmar was among the closest Companions of the Prophet ﷺ, and his name is often mentioned together with Abū Bakr’s in accounts of companionship and counsel.",
+    "proph.hafsa": "The Prophet ﷺ married Ḥafṣa bint ʿUmar, so ʿUmar became the Prophet’s father-in-law.",
+    "proph.battles": "He took part with the Prophet ﷺ in Badr, Uḥud, the Trench, the Conquest of Makkah and the other campaigns.",
+    "proph.hudaybiyyah": "At the Treaty of al-Ḥudaybiya, ʿUmar questioned the Prophet ﷺ about the terms of the treaty; he is later reported to have performed good deeds because of this.",
+    "proph.death": "When the Prophet ﷺ died, ʿUmar at first denied that he had died, then calmed down when Abū Bakr addressed the people and recited a verse from Sūrat Āl ʿImrān.",
+    "events.hijra": "ʿUmar emigrated to Madinah before the Prophet ﷺ, as part of a group of emigrants.",
+    "events.badr": "At Badr, ʿUmar advised putting the prisoners to death while Abū Bakr advised accepting ransom; revelation then came concerning the prisoners.",
+    "comp.abubakr": "ʿUmar pledged allegiance to Abū Bakr at the Saqīfa and was among his closest aides; Abū Bakr later designated him as his successor.",
+    "comp.khalid": "After becoming caliph, ʿUmar removed Khālid ibn al-Walīd from the command of the army in al-Shām; reports and opinions differ on the reasons.",
+    "comp.shura": "After he was stabbed, ʿUmar left the choice of successor to a council of six: ʿUthmān, ʿAlī, Ṭalḥa, al-Zubayr, ʿAbd al-Raḥmān ibn ʿAwf and Saʿd ibn Abī Waqqāṣ.",
+    "cal.start": "He became caliph in 13 AH (634 CE) after the death of Abū Bakr, and his caliphate lasted about ten years.",
+    "cal.conquests": "During his rule the conquests extended to al-Shām, Iraq, Egypt and parts of Persia.",
+    "cal.jerusalem": "He concluded a treaty with the people of Aelia (Jerusalem) and travelled there to receive the city.",
+    "cal.admin": "He organised the registers (dīwāns) and fixed stipends for the fighters, founded garrison cities such as Basra and Kufa, and appointed and held governors to account.",
+    "cal.calendar": "The start of dating by the Hijra is attributed to him; reports differ on the year in which this happened and on the details of the consultation.",
+    "cal.taraweeh": "He gathered the people in Ramadan behind a single imam in the mosque for the tarāwīḥ prayer: Ubayy ibn Kaʿb.",
+    "death.attack": "He was stabbed by Abū Luʾluʾa (Fīrūz), a Persian slave of al-Mughīra ibn Shuʿba, while leading the dawn prayer in the Prophet’s Mosque.",
+    "death.date": "This took place at the end of Dhū al-Ḥijja 23 AH (644 CE); reports differ on the exact day and on how many days he lived after the attack.",
+    "death.age": "Reports differ on his age at death; many narrators give about sixty-three years.",
+    "death.burial": "He asked ʿĀʾisha’s permission to be buried beside the Prophet ﷺ and Abū Bakr; she granted it, and he was buried in her chamber.",
+    "leg.second": "He is counted as the second of the Rightly Guided Caliphs, and hadith scholars and historians devote dedicated chapters to his merits and accounts.",
+    "leg.justice": "In Islamic memory he remains a proverbial example of justice and of holding governors accountable."
+  },
+  "journey": {
+    "birth": {
+      "label": "Birth",
+      "when": "About 13 years after the Year of the Elephant (some reports)"
+    },
+    "conversion": {
+      "label": "Conversion",
+      "when": "6th year of the mission (most reports)"
+    },
+    "hijra": {
+      "label": "Emigration to Madinah",
+      "when": "1 AH / 622 CE"
+    },
+    "badr": {
+      "label": "Battle of Badr",
+      "when": "2 AH / 624 CE"
+    },
+    "uhud": {
+      "label": "Battle of Uḥud",
+      "when": "3 AH / 625 CE"
+    },
+    "khandaq": {
+      "label": "Battle of the Trench",
+      "when": "5 AH / 627 CE (some say 4 AH)"
+    },
+    "hudaybiyyah": {
+      "label": "Treaty of al-Ḥudaybiya",
+      "when": "6 AH / 628 CE"
+    },
+    "fath": {
+      "label": "Conquest of Makkah",
+      "when": "8 AH / 630 CE"
+    },
+    "prophet_death": {
+      "label": "Death of the Prophet ﷺ",
+      "when": "11 AH / 632 CE"
+    },
+    "caliphate": {
+      "label": "Becomes caliph",
+      "when": "13 AH / 634 CE"
+    },
+    "jerusalem": {
+      "label": "Treaty of Aelia (Jerusalem)",
+      "when": "15–16 AH / 636–637 CE (reports differ)"
+    },
+    "death": {
+      "label": "Death",
+      "when": "Dhū al-Ḥijja 23 AH / 644 CE"
+    }
+  },
+  "refs": {
+    "ذكر إسلام عمر بن الخطاب": "Account of the conversion of ʿUmar ibn al-Khaṭṭāb",
+    "ترجمة عمر بن الخطاب": "Biography of ʿUmar ibn al-Khaṭṭāb",
+    "كتاب فضائل الصحابة، باب مناقب عمر بن الخطاب": "Book of the Virtues of the Companions, chapter: the merits of ʿUmar ibn al-Khaṭṭāb",
+    "كتاب الشروط، باب الشروط في الجهاد والمصالحة": "Book of Conditions, chapter: conditions in jihad and in treaties",
+    "كتاب مناقب الأنصار، باب مقدم النبي ﷺ وأصحابه إلى المدينة": "Book of the Merits of the Anṣār, chapter: the arrival of the Prophet ﷺ and his Companions in Madinah",
+    "كتاب المغازي، باب مرض النبي ﷺ ووفاته": "Book of the Campaigns, chapter: the illness and death of the Prophet ﷺ",
+    "كتاب فضائل الصحابة، باب قصة البيعة والاتفاق على عثمان": "Book of the Virtues of the Companions, chapter: the story of the pledge and the agreement on ʿUthmān",
+    "كتاب صلاة التراويح، باب فضل من قام رمضان": "Book of the Tarāwīḥ prayer, chapter: the merit of standing in prayer in Ramadan",
+    "كتاب الجهاد والسير، باب الإمداد بالملائكة في غزوة بدر": "Book of Jihad and Expeditions, chapter: the reinforcement by angels at Badr",
+    "خلافة عمر بن الخطاب": "The caliphate of ʿUmar ibn al-Khaṭṭāb",
+    "حوادث سنة 11هـ: خبر السقيفة": "Events of 11 AH: the account of the Saqīfa",
+    "حوادث سنة 23هـ: مقتل عمر": "Events of 23 AH: the killing of ʿUmar",
+    "حوادث السنوات 15–17هـ: بيت المقدس والتأريخ": "Events of 15–17 AH: Jerusalem and the beginning of dating",
+    "ترجمة عمر بن الخطاب في الإصابة": "Entry on ʿUmar ibn al-Khaṭṭāb"
+  },
+  "books": {
+    "صحيح البخاري": "Sahih al-Bukhari",
+    "السيرة النبوية — ابن هشام": "The Prophetic Biography — Ibn Hishām",
+    "البداية والنهاية — ابن كثير": "The Beginning and the End — Ibn Kathīr",
+    "صحيح مسلم": "Sahih Muslim",
+    "القرآن الكريم": "The Noble Qurʾān",
+    "الرحيق المختوم — المباركفوري": "The Sealed Nectar — al-Mubārakfūrī",
+    "الطبقات الكبرى — ابن سعد": "The Great Classes — Ibn Saʿd",
+    "تاريخ الرسل والملوك — الطبري": "History of the Messengers and Kings — al-Ṭabarī",
+    "الإصابة في تمييز الصحابة — ابن حجر": "al-Iṣāba fī Tamyīz al-Ṣaḥāba — Ibn Ḥajar"
+  }
+}
