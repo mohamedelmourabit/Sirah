@@ -84,6 +84,7 @@ function Sources() {
     <div className="space-y-4">
       <section className="rounded-xl border border-line bg-panel p-4 text-sm text-slate-300">
         <p>{t('sourcesPage.legend')}</p>
+        <p className="mt-2 text-xs text-amber-200/90">{t('detail.incompleteNote')}</p>
         <ul className="mt-2 space-y-1.5">
           {VSTATUS_ORDER.map((v) => <li key={v}><VerifyLabel s={v} /> — {t(`verification.${v}.desc`)}</li>)}
         </ul>
@@ -92,7 +93,7 @@ function Sources() {
         <section key={title} className="rounded-xl border border-line bg-panel p-4">
           <h3 className="font-display text-xl text-gold2">{title}</h3>
           <ul className="mt-2 flex flex-wrap gap-2">
-            {items.map((i) => <li key={i.id}><button onClick={() => open(i.id)} className="rounded-full border border-line px-3 py-1 text-xs hover:border-gold" title={i.ref}>{i.name}</button></li>)}
+            {items.map((i) => <li key={i.id + i.ref}><button onClick={() => open(i.id)} className="rounded-full border border-line px-3 py-1 text-xs hover:border-gold" title={i.ref}>{i.name}</button></li>)}
           </ul>
         </section>
       ))}

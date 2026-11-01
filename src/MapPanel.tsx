@@ -4,6 +4,7 @@ import cytoscape from 'cytoscape'
 import { useApp } from './ctx'
 import { Kind, KIND_COLOR, Period } from './data'
 
+const RADII = [440, 590, 740]
 const MAIN = ['makkah', 'madinah', 'badr', 'uhud', 'hudaybiyyah', 'fath', 'companions', 'hijra']
 // gold line icons (24x24) drawn inside the main circular nodes
 const ICONS: Record<string, string> = {
@@ -48,7 +49,7 @@ export default function MapPanel({ tall }: { tall?: boolean }) {
     ring(MAIN.filter((i) => ids.has(i)), 270)
     // chronological neighbours alternate between two radii: more room for labels, nothing overlaps
     rest.forEach((e, i) => {
-      const a = 0.2 + (i / rest.length) * Math.PI * 2 - Math.PI / 2, r = rest.length % 2 && i === rest.length - 1 ? 515 : i % 2 ? 590 : 440 // odd count: the last node (next to the first) gets a middle radius
+      const a = 0.2 + (i / rest.length) * Math.PI * 2 - Math.PI / 2, r = RADII[i % RADII.length] // chronological neighbours cycle through three radii: more room for labels
       pos.set(e.id, { x: Math.cos(a) * r, y: Math.sin(a) * r })
     })
     // label side: outward, away from the centre (right/left on the flanks, above/below at top/bottom)

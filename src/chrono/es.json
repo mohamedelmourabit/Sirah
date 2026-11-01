@@ -1,0 +1,95 @@
+{
+  "translation": {
+    "status": "draft"
+  },
+  "verification": {
+    "status": "PENDING_REVIEW"
+  },
+  "groups": {
+    "g1": {
+      "title": "Arabia antes del nacimiento del Profeta",
+      "range": "Antes del 570",
+      "intro": "La sociedad tribal, los Quraysh, La Meca y el Año del Elefante."
+    },
+    "g2": {
+      "title": "Nacimiento e infancia",
+      "range": "570 – hacia 578",
+      "intro": "El nacimiento, la orfandad y la tutela."
+    },
+    "g3": {
+      "title": "Juventud y primeros años",
+      "range": "Hacia 580 – 595",
+      "intro": "El pastoreo, el comercio y la fama de honradez."
+    },
+    "g4": {
+      "title": "El matrimonio con Jadīya",
+      "range": "Hacia 595 – 605",
+      "intro": "El matrimonio y después la reconstrucción de la Kaaba antes de la misión."
+    },
+    "g5": {
+      "title": "La primera revelación",
+      "range": "Ramaḍān – hacia 610",
+      "intro": "La revelación en la cueva de Ḥirāʾ."
+    },
+    "g6": {
+      "title": "Los primeros años del islam en La Meca",
+      "range": "Hacia 610 – 613",
+      "intro": "La llamada privada y los primeros musulmanes."
+    },
+    "g7": {
+      "title": "La predicación pública y la persecución",
+      "range": "Desde hacia 613",
+      "intro": "La llamada pública y el daño causado a los musulmanes."
+    },
+    "g8": {
+      "title": "La emigración a Abisinia",
+      "range": "Hacia 615",
+      "intro": "El refugio de los musulmanes con el Negus."
+    },
+    "g9": {
+      "title": "El boicot y el Año de la Tristeza",
+      "range": "Hacia 616 – 619",
+      "intro": "El boicot, la muerte de Abū Ṭālib y Jadīya, y el viaje a Ṭāʾif."
+    },
+    "g10": {
+      "title": "El Viaje Nocturno y la Ascensión",
+      "range": "Antes de la Hégira",
+      "intro": "El viaje de al-Isrāʾ y al-Miʿrāŷ."
+    },
+    "g11": {
+      "title": "La Hégira a Medina",
+      "range": "621 – 622",
+      "intro": "Los dos juramentos de al-ʿAqaba y luego la emigración."
+    },
+    "g12": {
+      "title": "La fundación de la comunidad musulmana",
+      "range": "Año 1 H. – 622 / 623",
+      "intro": "La mezquita, la hermandad y la organización de la comunidad."
+    },
+    "g13": {
+      "title": "Grandes sucesos y batallas de Medina",
+      "range": "Años 2 – 5 H. / 624 – 627",
+      "intro": "Badr, Uḥud y el Foso."
+    },
+    "g14": {
+      "title": "El tratado de al-Ḥudaybiya y sus consecuencias",
+      "range": "Años 6 – 7 H. / 628",
+      "intro": "El tratado y luego la campaña de Jaybar."
+    },
+    "g15": {
+      "title": "La conquista de La Meca",
+      "range": "Año 8 H. / 629 – 630",
+      "intro": "Muʾta, luego la conquista de La Meca y después Ḥunayn."
+    },
+    "g16": {
+      "title": "Tabūk y la Peregrinación de Despedida",
+      "range": "Años 9 – 10 H. / 630 – 632",
+      "intro": "La expedición a Tabūk y luego la Peregrinación de Despedida."
+    },
+    "g17": {
+      "title": "La última enfermedad y la muerte del Profeta ﷺ",
+      "range": "Rabīʿ al-Awwal del año 11 H. – 632",
+      "intro": "La enfermedad y muerte del Profeta ﷺ."
+    }
+  }
+}

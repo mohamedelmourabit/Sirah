@@ -2,7 +2,7 @@ import { SAMPLE, Entity } from '../data'
 import fr from '../locales/content/fr.json'
 import en from '../locales/content/en.json'
 import es from '../locales/content/es.json'
-import type { TrRow, VerRow } from './api'
+import type { EdRow, TrRow, VerRow } from './api'
 
 export type Lang = 'ar' | 'fr' | 'en' | 'es'
 export const LANGS: Lang[] = ['ar', 'fr', 'en', 'es']
@@ -25,8 +25,8 @@ export const byId = new Map(ENTITIES.map((e) => [e.id, e]))
 const BUNDLED = { fr, en, es } as unknown as Record<string, { entities: Record<string, Fields> }>
 export const bundledFields = (id: string, lang: Lang): Fields => (lang === 'ar' ? {} : { ...BUNDLED[lang]?.entities[id] })
 
-export interface Index { tr: Map<string, TrRow>; ver: Map<string, VerRow> }
-export const index = (tr: TrRow[], ver: VerRow[]): Index => ({ tr: new Map(tr.map((r) => [r.entity_id + '/' + r.lang, r])), ver: new Map(ver.map((r) => [r.entity_id + '/' + r.lang, r])) })
+export interface Index { tr: Map<string, TrRow>; ver: Map<string, VerRow>; ed: Map<string, EdRow> }
+export const index = (tr: TrRow[], ver: VerRow[], ed: EdRow[] = []): Index => ({ tr: new Map(tr.map((r) => [r.entity_id + '/' + r.lang, r])), ver: new Map(ver.map((r) => [r.entity_id + '/' + r.lang, r])), ed: new Map(ed.map((r) => [r.record_id, r])) })
 /** Missing translation row -> still the bundled draft; missing verification row -> PENDING_REVIEW. */
 export const trStatus = (ix: Index, id: string, l: Lang) => (l === 'ar' ? null : ix.tr.get(id + '/' + l)?.translation_status ?? 'draft')
 export const vStatus = (ix: Index, id: string, l: Lang) => ix.ver.get(id + '/' + l)?.status ?? 'PENDING_REVIEW'

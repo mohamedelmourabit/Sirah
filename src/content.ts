@@ -3,8 +3,10 @@ import type { Entity } from './data'
 import arJson from './locales/content/ar.json'
 
 /** Historical-accuracy status of what is displayed. Never derived automatically. */
-export type VStatus = 'VERIFIED' | 'DISPUTED' | 'UNCERTAIN' | 'PENDING_REVIEW'
-export const VSTATUS: VStatus[] = ['VERIFIED', 'DISPUTED', 'UNCERTAIN', 'PENDING_REVIEW']
+export type VStatus = 'VERIFIED' | 'IN_REVIEW' | 'NEEDS_REVISION' | 'PENDING_REVIEW' | 'DISPUTED' | 'UNCERTAIN'
+/** DISPUTED / UNCERTAIN are LEGACY values (they describe the account, not the review); they are still accepted but new records use
+ *  the editorial model (src/editorial): review status and classification are separate fields. */
+export const VSTATUS: VStatus[] = ['VERIFIED', 'IN_REVIEW', 'NEEDS_REVISION', 'PENDING_REVIEW', 'DISPUTED', 'UNCERTAIN']
 export interface Verif { status: VStatus; reviewed_by?: string; reviewed_at?: string; note?: string; refs?: { title: string; ref?: string }[] }
 /** Linguistic review of one language's text. Independent of Verif. */
 export interface TrMeta { status?: 'draft' | 'reviewed'; reviewed_by?: string; reviewed_at?: string }

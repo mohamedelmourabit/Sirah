@@ -79,7 +79,48 @@
   },
   "timeline": {
     "title": "Chronologie",
-    "viewAll": "Tout voir →"
+    "viewAll": "Tout voir →",
+    "searchPlaceholder": "Rechercher dans la chronologie…",
+    "searchAria": "Recherche dans la chronologie",
+    "filters": "Filtres de la chronologie",
+    "period": "Période",
+    "category": "Catégorie",
+    "all": "Tout",
+    "jump": "Aller à une étape",
+    "modeLabel": "Mode d’affichage",
+    "modeTrack": "Piste horizontale",
+    "modeReading": "Mode lecture",
+    "events_one": "{{count}} événement",
+    "events_other": "{{count}} événements",
+    "empty": "Aucun événement ne correspond à ces filtres.",
+    "reset": "Réinitialiser les filtres",
+    "prevEvent": "Événement précédent",
+    "nextEvent": "Événement suivant",
+    "scrollPrev": "Défiler vers le précédent",
+    "scrollNext": "Défiler vers le suivant",
+    "stage": "Étape {{n}} sur {{total}}",
+    "legend": "Tous les événements sont en attente de révision historique (PENDING_REVIEW). Les étiquettes de certitude montrent comment les sources présentent chaque événement ; ce n’est pas une vérification. Les dates alternatives restent visibles lorsque les récits divergent.",
+    "openDetails": "Détails",
+    "onMap": "Sur la carte",
+    "showInTimeline": "Voir dans la chronologie",
+    "selected": "Sélectionné",
+    "alt": "Les récits divergent",
+    "position": "Événement {{n}} sur {{total}}",
+    "who": "Compagnons et personnages",
+    "where": "Lieux",
+    "sources": "Sources",
+    "stageLabel": "Étape",
+    "cat": {
+      "background": "Contexte historique",
+      "life": "Sa vie ﷺ",
+      "revelation": "Révélation et appel",
+      "hardship": "Épreuves et persécution",
+      "migration": "Émigrations",
+      "community": "Construction de la communauté",
+      "military": "Expéditions et batailles",
+      "diplomacy": "Serments et traités",
+      "final": "Les derniers jours"
+    }
   },
   "directory": {
     "placeholder": "Rechercher par nom ou mot-clé...",
@@ -95,7 +136,9 @@
     "sources": "Sources",
     "related": "Liens",
     "showMap": "Voir sur la carte",
-    "showTimeline": "Dans la chronologie"
+    "showTimeline": "Dans la chronologie",
+    "incomplete": "référence au niveau du livre ou du chapitre — incomplète",
+    "incompleteNote": "Les références affichées sont au niveau du livre ou du chapitre et n’ont pas été relues ; elles n’indiquent ni volume, ni page, ni numéro de hadith, ni édition."
   },
   "sourcesPage": {
     "legend": "Le statut de vérification historique est distinct du statut de traduction. Les quatre statuts :"
@@ -151,7 +194,15 @@
       "label": "En attente de révision",
       "desc": "Pas encore examiné par un relecteur qualifié ; à ne pas considérer comme vérifié."
     },
-    "refs": "Références à l’appui"
+    "refs": "Références à l’appui",
+    "IN_REVIEW": {
+      "label": "En cours de relecture",
+      "desc": "Un relecteur qualifié examine actuellement cette fiche ; elle n’est pas encore vérifiée."
+    },
+    "NEEDS_REVISION": {
+      "label": "À corriger",
+      "desc": "Le relecteur l’a renvoyée pour correction ; elle n’est pas vérifiée."
+    }
   },
   "tr": {
     "pillOriginal": "Texte arabe original",

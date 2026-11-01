@@ -87,5 +87,5 @@ test('bundled content never ships auto-approved or auto-verified', () => {
       assert.ok(v.status === 'PENDING_REVIEW' || (v.reviewed_by && v.reviewed_at), `${l}/${id} verification`)
     }
   }
-  assert.equal(Object.keys(arPack.entities).length, 40)
+  assert.equal(Object.keys(arPack.entities).length, (readFileSync('src/data.ts', 'utf8').match(/E\(\{ id: '/g) ?? []).length) // every entity has a verification record
 })

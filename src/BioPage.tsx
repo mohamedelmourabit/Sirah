@@ -1,31 +1,18 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { BIOS, hasBio } from './bio'
-import type { BioPack, Certainty } from './bio/types'
+import type { BioPack } from './bio/types'
 import { translationApproved, verificationOf } from './content'
 import { useApp } from './ctx'
 import { KIND_COLOR, Period } from './data'
-import { TrTag, VerifyLabel } from './status'
-
-const CERT: Record<Certainty, string> = {
-  established: 'border-jade/50 bg-jade/10 text-emerald-200',
-  disputed: 'border-amber-500/50 bg-amber-500/10 text-amber-200',
-  uncertain: 'border-orange-400/50 bg-orange-400/10 text-orange-200',
-}
-const CICON: Record<Certainty, string> = { established: '●', disputed: '⚖', uncertain: '?' }
-
-/** How the sources present an account. NOT the review status (that is the page-level verification). Icon + text, never colour alone. */
-function CertBadge({ c }: { c: Certainty }) {
-  const { t } = useTranslation()
-  return <span title={t(`bio.${c}Desc`)} className={`inline-flex shrink-0 items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] ${CERT[c]}`}><span aria-hidden>{CICON[c]}</span>{t(`bio.${c}`)}</span>
-}
+import { CertBadge, IncTag, TrTag, VerifyLabel } from './status'
 
 type Mode = 'original' | 'approved' | 'draft' | 'pending'
 
 /** Reusable biography template: all content comes from src/bio/<id>/ (skeleton + per-language packs). */
 export default function BioPage({ id, onBack }: { id: string; onBack: () => void }) {
   const { t, i18n } = useTranslation()
-  const { byId, all, open, readBio, browse, drafts, setDrafts, viewed } = useApp()
+  const { byId, all, open, readBio, browse, drafts, setDrafts, viewed, orig } = useApp()
   const lang = i18n.resolvedLanguage ?? 'ar'
   const def = BIOS[id].def
   const entity = byId.get(id)!
@@ -232,10 +219,10 @@ export default function BioPage({ id, onBack }: { id: string; onBack: () => void
             <h3 id="h-src" className="font-display text-2xl text-gold2">{t('bio.sources')}</h3>
             <p className="mt-1 rounded-lg bg-amber-500/10 p-2 text-xs text-amber-200">{t('bio.sourceNote')}</p>
             <ol className="mt-3 space-y-1.5 text-sm text-slate-300" {...ar}>
-              {srcOrder.map((s, i) => <li key={s} id={`src-${i + 1}`}><span className="text-gold2">[{i + 1}]</span> <b>{book(def.sources[s][0])}</b> — {loc(def.sources[s][1])}</li>)}
+              {srcOrder.map((s, i) => <li key={s} id={`src-${i + 1}`}><span className="text-gold2">[{i + 1}]</span> <b>{book(def.sources[s][0])}</b> — {loc(def.sources[s][1])}<IncTag work={def.sources[s][0]} locator={def.sources[s][1]} /></li>)}
             </ol>
             <h4 className="mb-1 mt-4 text-xs font-semibold text-gold">{t('detail.sources')}</h4>
-            <ul className="list-disc space-y-1 ps-5 text-sm text-slate-400" lang="ar" dir="rtl">{entity.sources.map(([ti, r]) => <li key={ti + r}><b>{ti}</b> — {r}</li>)}</ul>
+            <ul className="list-disc space-y-1 ps-5 text-sm text-slate-400" lang="ar" dir="rtl">{entity.sources.map(([ti, r], i) => { const o = orig.get(id)?.sources[i] ?? [ti, r]; return <li key={ti + r}><b>{ti}</b> — {r}<IncTag work={o[0]} locator={o[1]} /></li> })}</ul>
           </section>
 
           <nav aria-label={`${t('bio.prev')} / ${t('bio.next')}`} className="grid gap-3 sm:grid-cols-2">

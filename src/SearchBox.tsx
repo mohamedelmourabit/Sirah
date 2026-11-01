@@ -87,7 +87,7 @@ export default function SearchBox({ onPick, onPeriod }: { onPick: (id: string) =
                         <i className="mt-1.5 size-2.5 shrink-0 rounded-full" style={{ background: COLOR[c] }} />
                         <span className="min-w-0 flex-1">
                           <span className="flex flex-wrap items-center gap-x-2"><b className="font-medium text-slate-100"><Hl text={h.doc.display} q={query} /></b>
-                            {e && <><span className="text-[11px] text-slate-400">{t(`kinds.${e.kind}`)} · {t(`periods.${e.period}`)}</span><TrTag e={e} /></>}</span>
+                            {e && <><span className="text-[11px] text-slate-400">{t(`kinds.${e.kind}`)} · {t(`periods.${e.period}`)}{e.kind === 'event' ? <> · <bdi>{e.when}</bdi></> : null}</span><TrTag e={e} /></>}</span>
                           {h.via && <span className="block text-xs text-gold2/80" dir="auto">{t('search.alsoKnown', { name: '' })}<Hl text={h.via} q={query} /></span>}
                           {e && <span className="mt-0.5 line-clamp-1 block text-xs text-slate-400">{e.summary}</span>}
                         </span>

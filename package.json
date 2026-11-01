@@ -9,11 +9,14 @@
     "preview": "vite preview",
     "check:i18n": "node scripts/check-i18n.mjs",
     "check:bio": "node scripts/check-bio.mjs",
+    "check:timeline": "node scripts/check-timeline.mjs",
     "seed": "node scripts/export-seed.mjs",
     "test:db": "node scripts/test-supabase.mjs",
     "test:admin": "node scripts/test-admin.mjs",
+    "test:editorial": "node scripts/test-editorial.mjs",
+    "audit": "node scripts/audit-content.mjs",
     "test:search": "node scripts/test-search.mjs",
-    "test": "node scripts/test-content.mjs && node scripts/check-i18n.mjs && node scripts/check-bio.mjs && node scripts/test-supabase.mjs && node scripts/test-admin.mjs && node scripts/test-search.mjs"
+    "test": "node scripts/test-content.mjs && node scripts/check-i18n.mjs && node scripts/check-bio.mjs && node scripts/check-timeline.mjs && node scripts/test-supabase.mjs && node scripts/test-admin.mjs && node scripts/test-editorial.mjs && node scripts/test-search.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",

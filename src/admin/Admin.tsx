@@ -3,6 +3,7 @@ import { api, Me, sb } from './api'
 import { ENTITIES, KIND_LABEL, Index, LANGS, LANG_NAME, PERIOD_LABEL, TR_LABEL, TR_STATUS, V_LABEL, V_STATUS, index, trStatus, vStatus, byId, Lang } from './model'
 import { Bar, Btn, Card, TChip, VChip, inp } from './ui'
 import Editor from './Editor'
+import { Backlog, Editorial, RecordView } from './Editorial'
 
 type Phase = 'loading' | 'login' | 'denied' | 'ready' | 'error'
 const TR_LANGS: Lang[] = ['fr', 'en', 'es']
@@ -17,7 +18,7 @@ export default function Admin() {
 
   useEffect(() => { const h = () => setHash(route()); addEventListener('hashchange', h); return () => removeEventListener('hashchange', h) }, [])
 
-  const reload = useCallback(async () => { const d = await api.load(); const n = index(d.tr, d.ver); setIx(n); return n }, [])
+  const reload = useCallback(async () => { const d = await api.load(); const n = index(d.tr, d.ver, d.ed); setIx(n); return n }, [])
   const enter = useCallback(async (signedIn: boolean) => {
     if (!signedIn) { setMe(null); setIx(null); return setPhase('login') }
     try {
@@ -42,13 +43,14 @@ export default function Admin() {
 
   const [path, q] = hash.split('?')
   const id = path.startsWith('entity/') ? path.slice(7) : null
-  const view = id ? 'entities' : (['overview', 'queue', 'entities'].includes(path) ? path : 'overview')
+  const rid = path.startsWith('record/') ? path.slice(7) : null
+  const view = id ? 'entities' : rid ? 'editorial' : (['overview', 'queue', 'entities', 'editorial', 'backlog'].includes(path) ? path : 'overview')
   return (
     <div className="mx-auto max-w-6xl px-4 pb-16">
       <header className="flex flex-wrap items-center gap-3 border-b border-line py-4">
         <h1 className="font-display text-2xl text-gold2">Content Review</h1>
-        <nav aria-label="Dashboard" className="flex gap-1">
-          {[['overview', 'Overview'], ['queue', 'Review queue'], ['entities', 'Entities']].map(([k, l]) => (
+        <nav aria-label="Dashboard" className="flex flex-wrap gap-1">
+          {[['overview', 'Overview'], ['queue', 'Review queue'], ['entities', 'Entities'], ['editorial', 'Historical review'], ['backlog', 'Backlog']].map(([k, l]) => (
             <a key={k} href={`#/${k}`} aria-current={view === k ? 'page' : undefined} className={`rounded-lg px-3 py-1.5 text-sm ${view === k ? 'bg-gold/20 text-gold2' : 'text-slate-300 hover:bg-panel2'}`}>{l}</a>
           ))}
         </nav>
@@ -58,7 +60,7 @@ export default function Admin() {
         </div>
       </header>
       <main className="pt-5">
-        {id && byId.has(id) ? <Editor key={id} id={id} lang0={q} me={me} ix={ix} reload={reload} /> : view === 'queue' ? <Queue ix={ix} /> : view === 'entities' ? <Entities ix={ix} /> : <Overview ix={ix} />}
+        {id && byId.has(id) ? <Editor key={id} id={id} lang0={q} me={me} ix={ix} reload={reload} /> : rid ? <RecordView key={rid} rid={rid} me={me} ix={ix} reload={reload} /> : view === 'editorial' ? <Editorial ix={ix} /> : view === 'backlog' ? <Backlog /> : view === 'queue' ? <Queue ix={ix} /> : view === 'entities' ? <Entities ix={ix} /> : <Overview ix={ix} />}
       </main>
     </div>
   )

@@ -201,3 +201,83 @@ revoke all on function save_translation(text,text,jsonb,text), submit_translatio
 grant execute on function reviewer_role() to anon, authenticated; -- RLS policies call it as the querying role
 grant execute on function save_translation(text,text,jsonb,text), submit_translation(text,text,text), review_translation(text,text,text,text),
   set_verification(text,text,text,jsonb,text), add_review_note(text,text,text,text) to authenticated;
+
+-- ============ Historical editorial review (record level) ============
+-- THREE independent axes: this table holds (1) the historical review status and (2) the classification of the account.
+-- Translation status is NOT here: it stays in entity_translations / its own review. Changing one never changes another.
+-- record_id: 'entity:<id>' | 'stage:<gN>' | 'biography:<id>' | 'claim:<bio>:<claimId>'  (ids are defined by src/editorial/records.ts).
+-- A row exists only once someone has acted on a record; no row = PENDING_REVIEW with the classification bundled in the app.
+create table editorial_records (
+  record_id        text primary key,
+  record_type      text not null check (record_type in ('entity','stage','biography','claim')),
+  review_status    text not null default 'PENDING_REVIEW' check (review_status in ('PENDING_REVIEW','IN_REVIEW','VERIFIED','NEEDS_REVISION')),
+  classification   text check (classification in ('ESTABLISHED','DISPUTED','UNCERTAIN')),
+  reviewed_by      text,
+  reviewer_role    text check (reviewer_role in ('editor','reviewer')),
+  reviewed_at      timestamptz,
+  reviewed_sources jsonb not null default '[]',   -- source ids (src/editorial/sources.ts) the reviewer actually checked
+  review_notes     text,
+  updated_at       timestamptz not null default now(),
+  constraint editorial_verified_needs_review_data check (
+    review_status <> 'VERIFIED' or (reviewed_by is not null and reviewer_role is not null and reviewed_at is not null
+      and jsonb_array_length(reviewed_sources) > 0 and coalesce(trim(review_notes), '') <> ''))
+);
+create table editorial_log (
+  id               bigint generated always as identity primary key,
+  record_id        text not null,
+  action           text not null,            -- review | classify | note
+  from_status      text,
+  to_status        text,
+  classification   text,
+  reviewed_sources jsonb,
+  notes            text,
+  actor            uuid not null,
+  actor_name       text not null,
+  at               timestamptz not null default now()
+);
+create index on editorial_log (record_id, at desc);
+alter table editorial_records enable row level security;
+alter table editorial_log enable row level security;
+create policy "public read editorial status" on editorial_records for select using (true);   -- review status is public information
+create policy "staff read editorial log" on editorial_log for select using (reviewer_role() is not null);
+
+-- No PENDING_REVIEW -> VERIFIED shortcut: a record must be IN_REVIEW first. Only a reviewer can verify, return for revision or reclassify.
+create function set_editorial_review(p_record text, p_type text, p_status text, p_classification text default null, p_sources jsonb default '[]', p_notes text default null) returns void
+language plpgsql security definer set search_path = public as $$
+declare a reviewers; cur editorial_records; frm text; ok boolean;
+begin
+  select * into cur from editorial_records where record_id = p_record for update;
+  frm := coalesce(cur.review_status, 'PENDING_REVIEW');
+  a := _actor(case when p_status in ('VERIFIED','NEEDS_REVISION') or p_classification is not null then 'reviewer' else 'editor' end);
+  ok := (frm, p_status) in (('PENDING_REVIEW','IN_REVIEW'),('IN_REVIEW','VERIFIED'),('IN_REVIEW','NEEDS_REVISION'),('IN_REVIEW','PENDING_REVIEW'),
+        ('NEEDS_REVISION','IN_REVIEW'),('NEEDS_REVISION','PENDING_REVIEW'),('VERIFIED','IN_REVIEW'),('VERIFIED','NEEDS_REVISION'));
+  ok := ok or (p_status = frm and p_classification is not null and frm <> 'VERIFIED'); -- reclassify without changing status (a VERIFIED record must be reopened first)
+  if not ok then raise exception '% -> % is not an allowed review transition', frm, p_status; end if;
+  if p_status = 'NEEDS_REVISION' and coalesce(trim(p_notes), '') = '' then raise exception 'returning a record for revision needs notes'; end if;
+  if p_classification is not null and p_classification is distinct from cur.classification and coalesce(trim(p_notes), '') = '' then raise exception 'changing the classification needs notes'; end if;
+  if p_status = 'VERIFIED' then
+    if jsonb_typeof(p_sources) <> 'array' or jsonb_array_length(p_sources) = 0 then raise exception 'VERIFIED needs at least one reviewed source reference'; end if;
+    if coalesce(trim(p_notes), '') = '' then raise exception 'VERIFIED needs review notes'; end if;
+  end if;
+  insert into editorial_records (record_id, record_type, review_status, classification, reviewed_by, reviewer_role, reviewed_at, reviewed_sources, review_notes, updated_at)
+    values (p_record, p_type, p_status, p_classification,
+            case when p_status = 'VERIFIED' then a.display_name end, case when p_status = 'VERIFIED' then a.role end, case when p_status = 'VERIFIED' then now() end,
+            case when p_status = 'VERIFIED' then p_sources else '[]'::jsonb end, nullif(trim(p_notes), ''), now())
+  on conflict (record_id) do update set review_status = excluded.review_status,
+    classification = coalesce(excluded.classification, editorial_records.classification),
+    reviewed_by = excluded.reviewed_by, reviewer_role = excluded.reviewer_role, reviewed_at = excluded.reviewed_at,
+    reviewed_sources = excluded.reviewed_sources, review_notes = coalesce(excluded.review_notes, editorial_records.review_notes), updated_at = now();
+  insert into editorial_log (record_id, action, from_status, to_status, classification, reviewed_sources, notes, actor, actor_name)
+    values (p_record, case when p_classification is not null then 'classify' else 'review' end, frm, p_status, p_classification, case when p_status = 'VERIFIED' then p_sources end, nullif(trim(p_notes), ''), a.user_id, a.display_name);
+end $$;
+
+create function add_editorial_note(p_record text, p_note text) returns void
+language plpgsql security definer set search_path = public as $$
+declare a reviewers := _actor('editor');
+begin
+  if coalesce(trim(p_note), '') = '' then raise exception 'empty note'; end if;
+  insert into editorial_log (record_id, action, notes, actor, actor_name) values (p_record, 'note', trim(p_note), a.user_id, a.display_name);
+end $$;
+
+revoke all on function set_editorial_review(text,text,text,text,jsonb,text), add_editorial_note(text,text) from public;
+grant execute on function set_editorial_review(text,text,text,text,jsonb,text), add_editorial_note(text,text) to authenticated;

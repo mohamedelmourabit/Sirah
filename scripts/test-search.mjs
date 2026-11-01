@@ -1,4 +1,4 @@
-// Run: npm run test:search — search engine over all 40 entities, in each UI language, with/without draft translations.
+// Run: npm run test:search — search engine over every entity, in each UI language, with/without draft translations.
 import assert from 'node:assert/strict'
 import { test, before } from 'node:test'
 import { readFileSync, mkdtempSync } from 'node:fs'
@@ -35,7 +35,7 @@ const CASES = [
   ['Medina', 'madinah'], ['Médine', 'madinah'], ['Medine', 'madinah'], ['MÉDINE', 'madinah'], ['Madinah', 'madinah'], ['المدينة', 'madinah'], ['المدينة المنورة', 'madinah'], ['مدينة', 'madinah'],
   ['Badr', 'badr'], ['Battle of Badr', 'badr'], ['Bataille de Badr', 'badr'], ['Batalla de Badr', 'badr'], ['بدر', 'badr'], ['غزوة بدر', 'badr'],
   ['Mecca', 'makkah'], ['La Mecque', 'makkah'], ['La Meca', 'makkah'], ['مكة', 'makkah'],
-  ['Aicha', 'aisha'], ['Khadija', 'khadija'], ['Jadiya', 'khadija'], ['Othman', 'uthman'], ['Osman', 'uthman'], ['Uhud', 'uhud'], ['Ohud', 'uhud'], ['Hijra', 'hijra'], ['Hégire', 'hijra'], ['Kaaba', 'kaaba'], ['الكعبة', 'kaaba'], ['Abyssinie', 'habasha'], ['Negus', 'najashi'], ['Khaled', 'khalid'], ['Bilal', 'bilal'],
+  ['Aicha', 'aisha'], ['Khadija', 'khadija'], ['Jadiya', 'khadija'], ['Othman', 'uthman'], ['Osman', 'uthman'], ['Uhud', 'uhud'], ['Ohud', 'uhud'], ['Hijra', 'hijra'], ['Hégire', 'hijra'], ['Kaaba', 'kaaba'], ['الكعبة', 'kaaba'], ['Abyssinie', 'habasha'], ['Khaybar', 'khaybar'], ['Khaïbar', 'khaybar'], ['Hunain', 'hunayn'], ['Tabouk', 'tabuk'], ['Mouta', 'muta'], ['Black Stone', 'kaaba_rebuild'], ['Piedra Negra', 'kaaba_rebuild'], ['Jahiliyya', 'arabia_pre'], ['Boicot', 'boycott'], ['حصار الشعب', 'boycott'], ['Voyage à Taïf', 'taif_trip'], ['Dar al-Arqam', 'secret_dawah'], ['مولد النبي', 'birth'], ['Birth', 'birth'], ['Final illness', 'illness'], ['غزوة خيبر', 'khaybar'], ['Negus', 'najashi'], ['Khaled', 'khalid'], ['Bilal', 'bilal'],
 ]
 for (const lang of ['ar', 'fr', 'en', 'es'])
   for (const drafts of [false, true])
@@ -49,10 +49,10 @@ test('whole-name match ranks first', () => {
   assert.equal(top(d, 'Medina', 1)[0], 'madinah'); assert.equal(top(d, 'Badr', 1)[0], 'badr'); assert.equal(top(d, 'Umar', 1)[0], 'umar')
 })
 
-test('index covers all 40 entities: each is found by its id, Arabic name, and every fr/en/es name, in every UI language', () => {
+test('index covers every entity: each is found by its id, Arabic name, and every fr/en/es name, in every UI language', () => {
   for (const lang of ['ar', 'fr', 'en', 'es']) {
     const d = docs(lang, false)
-    assert.equal(d.filter((x) => x.cat !== 'period').length, 40)
+    assert.equal(d.filter((x) => x.cat !== 'period').length, base.length)
     for (const e of base) {
       const names = [e.id.replace(/_/g, ' '), e.name, ...['fr', 'en', 'es'].map((l) => pk[l].entities[e.id].name)]
       for (const n of names) assert.ok(top(d, n, 5).includes(e.id), `${lang}: "${n}" does not find ${e.id}: ${top(d, n, 5)}`)

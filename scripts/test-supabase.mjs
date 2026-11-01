@@ -57,7 +57,7 @@ test('DB translations == bundled translations, all seeded as draft + PENDING_REV
   for (const l of ['fr', 'en', 'es']) {
     const c = J(l)
     const { rows } = await db.query('select * from entity_translations where lang=$1', [l])
-    assert.equal(rows.length, 40)
+    assert.equal(rows.length, sample.length)
     for (const r of rows) {
       assert.equal(r.translation_status, 'draft'); assert.equal(r.translation_reviewed_by, null)
       for (const k of ['name', 'when', 'summary', 'bio', 'context']) assert.equal(r.fields[k], c.entities[r.entity_id][k], `${l}/${r.entity_id}.${k}`)
@@ -70,8 +70,8 @@ test('DB translations == bundled translations, all seeded as draft + PENDING_REV
 test('RLS: anon cannot read draft translations; everything else public is readable', async () => {
   assert.equal((await as('anon', 'select * from entity_translations')).rows.length, 0)
   assert.equal((await as('authenticated', 'select * from entity_translations')).rows.length, 0)
-  assert.equal((await as('anon', 'select * from entities')).rows.length, 40)
-  assert.equal((await as('anon', 'select * from entity_verification')).rows.length, 160)
+  assert.equal((await as('anon', 'select * from entities')).rows.length, sample.length)
+  assert.equal((await as('anon', 'select * from entity_verification')).rows.length, sample.length * 4)
 })
 
 test('constraints: no reviewed translation / non-pending verification without reviewer + date', async () => {

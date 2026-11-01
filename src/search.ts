@@ -11,7 +11,7 @@ export interface Doc {
   display: string // the name currently shown
   y: number
 }
-export interface Hit { doc: Doc; score: number; via: string | null; fuzzy: boolean; bodyOnly: boolean }
+export interface Hit { doc: Doc; score: number; via: string | null; fuzzy: boolean; bodyOnly: boolean; len: number }
 
 /** Case-, accent-, diacritic- and apostrophe-insensitive; Latin vowels o/u and "ou" folded (Omar = Umar = Oumar). */
 export function norm(s: string): string {
@@ -33,7 +33,12 @@ function lev(a: string, b: string): number {
   return d[a.length][b.length]
 }
 /** 0 exact · 1 prefix · 2 substring · 3 one typo / spelling variant · -1 none */
+const noAl = (w: string) => (w.length > 3 && w.startsWith('ال') ? w.slice(2) : w) // Arabic definite article: الشعب = شعب
 export function matchWord(q: string, w: string): number {
+  const a = rawMatch(q, w), b = rawMatch(noAl(q), noAl(w))
+  return a < 0 ? b : b < 0 ? a : Math.min(a, b)
+}
+function rawMatch(q: string, w: string): number {
   if (w === q) return 0
   if (w.startsWith(q)) return 1
   if (q.length >= 3 && w.includes(q)) return 2
@@ -76,13 +81,14 @@ export function searchDocs(docs: Doc[], q: string, f: { cat?: Cat } = {}): Hit[]
     const via = d.names.find((n) => n !== d.display && toks.every((t) => words(n).some((w) => matchWord(t, w) >= 0))) ?? null
     const shown = toks.every((t) => words(d.display).some((w) => matchWord(t, w) >= 0))
     const exact = d.names.some((n) => norm(n) === norm(q)) // whole-name match outranks partial ones ("Medina" -> Madinah, not "Hijra to Madinah")
-    hits.push({ doc: d, score: score + (shown ? 0 : 0.5) - (exact ? 1 : 0), via: shown ? null : via, fuzzy, bodyOnly })
+    const len = Math.min(...d.names.filter((n) => toks.every((t) => words(n).some((w) => matchWord(t, w) >= 0))).map((n) => words(n).length), 99) // shorter matching name = closer match
+    hits.push({ doc: d, score: score + (shown ? 0 : 0.5) - (exact ? 1 : 0), via: shown ? null : via, fuzzy, bodyOnly, len })
   }
   // spelling-variant (fuzzy) matches only fill in when nothing matches precisely — keeps "Omar" from listing "ʿUmayr"
   // ...and description-only matches (e.g. "Medina" inside "Medinan period") only fill in when no name matches
   const byName = hits.some((h) => !h.bodyOnly) ? hits.filter((h) => !h.bodyOnly) : hits
   const out = byName.some((h) => !h.fuzzy) ? byName.filter((h) => !h.fuzzy) : byName
-  return out.sort((a, b) => a.score - b.score || a.doc.y - b.doc.y)
+  return out.sort((a, b) => a.score - b.score || a.len - b.len || a.doc.y - b.doc.y)
 }
 
 /** Closest known names for an empty result ("Did you mean"). */

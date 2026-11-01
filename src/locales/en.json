@@ -79,7 +79,48 @@
   },
   "timeline": {
     "title": "Timeline",
-    "viewAll": "View all →"
+    "viewAll": "View all →",
+    "searchPlaceholder": "Search the timeline…",
+    "searchAria": "Search the timeline",
+    "filters": "Timeline filters",
+    "period": "Period",
+    "category": "Category",
+    "all": "All",
+    "jump": "Jump to a stage",
+    "modeLabel": "View mode",
+    "modeTrack": "Horizontal track",
+    "modeReading": "Reading mode",
+    "events_one": "{{count}} event",
+    "events_other": "{{count}} events",
+    "empty": "No events match these filters.",
+    "reset": "Reset filters",
+    "prevEvent": "Previous event",
+    "nextEvent": "Next event",
+    "scrollPrev": "Scroll to previous",
+    "scrollNext": "Scroll to next",
+    "stage": "Stage {{n}} of {{total}}",
+    "legend": "Every event is pending historical review (PENDING_REVIEW). The certainty labels show how the sources present each event; they are not verification. Alternative dates stay visible where reports differ.",
+    "openDetails": "Details",
+    "onMap": "On the map",
+    "showInTimeline": "Show in timeline",
+    "selected": "Selected",
+    "alt": "Reports differ",
+    "position": "Event {{n}} of {{total}}",
+    "who": "Companions and figures",
+    "where": "Places",
+    "sources": "Sources",
+    "stageLabel": "Stage",
+    "cat": {
+      "background": "Historical background",
+      "life": "His life ﷺ",
+      "revelation": "Revelation and call",
+      "hardship": "Hardship and persecution",
+      "migration": "Migrations",
+      "community": "Building the community",
+      "military": "Campaigns and battles",
+      "diplomacy": "Pledges and treaties",
+      "final": "The final days"
+    }
   },
   "directory": {
     "placeholder": "Search by name or keyword...",
@@ -95,7 +136,9 @@
     "sources": "Sources",
     "related": "Related",
     "showMap": "Show on map",
-    "showTimeline": "In the timeline"
+    "showTimeline": "In the timeline",
+    "incomplete": "book / chapter-level reference — incomplete",
+    "incompleteNote": "The references shown are at book or chapter level and have not been reviewed; they give no volume, page, hadith number or edition."
   },
   "sourcesPage": {
     "legend": "Historical verification status is separate from translation status. The four statuses:"
@@ -151,7 +194,15 @@
       "label": "Pending review",
       "desc": "Not yet reviewed by a qualified reviewer; do not treat as verified."
     },
-    "refs": "Supporting references"
+    "refs": "Supporting references",
+    "IN_REVIEW": {
+      "label": "In review",
+      "desc": "A qualified reviewer is examining this record now; it is not verified yet."
+    },
+    "NEEDS_REVISION": {
+      "label": "Needs revision",
+      "desc": "The reviewer sent it back for correction; it is not verified."
+    }
   },
   "tr": {
     "pillOriginal": "Original Arabic text",

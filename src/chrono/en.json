@@ -1,0 +1,95 @@
+{
+  "translation": {
+    "status": "draft"
+  },
+  "verification": {
+    "status": "PENDING_REVIEW"
+  },
+  "groups": {
+    "g1": {
+      "title": "Arabia before the Prophet’s birth",
+      "range": "Before 570 CE",
+      "intro": "Tribal society, Quraysh and Makkah, and the Year of the Elephant."
+    },
+    "g2": {
+      "title": "Birth and childhood",
+      "range": "570 – about 578 CE",
+      "intro": "The birth, orphanhood and guardianship."
+    },
+    "g3": {
+      "title": "Youth and early life",
+      "range": "About 580 – 595 CE",
+      "intro": "Shepherding, trade, and a reputation for truthfulness."
+    },
+    "g4": {
+      "title": "Marriage to Khadīja",
+      "range": "About 595 – 605 CE",
+      "intro": "The marriage, followed by the rebuilding of the Kaʿba before the mission."
+    },
+    "g5": {
+      "title": "The first revelation",
+      "range": "Ramaḍān – about 610 CE",
+      "intro": "The revelation in the cave of Ḥirāʾ."
+    },
+    "g6": {
+      "title": "The early years of Islam in Makkah",
+      "range": "About 610 – 613 CE",
+      "intro": "The private call and the first Muslims."
+    },
+    "g7": {
+      "title": "Public preaching and persecution",
+      "range": "From about 613 CE",
+      "intro": "The public call and the harm done to the Muslims."
+    },
+    "g8": {
+      "title": "Migration to Abyssinia",
+      "range": "About 615 CE",
+      "intro": "The Muslims’ refuge with the Negus."
+    },
+    "g9": {
+      "title": "The boycott and the Year of Sorrow",
+      "range": "About 616 – 619 CE",
+      "intro": "The boycott, the deaths of Abū Ṭālib and Khadīja, and the journey to Ṭāʾif."
+    },
+    "g10": {
+      "title": "The Night Journey and Ascension",
+      "range": "Before the Hijra",
+      "intro": "The journey of al-Isrāʾ and al-Miʿrāj."
+    },
+    "g11": {
+      "title": "The Hijra to Madinah",
+      "range": "621 – 622 CE",
+      "intro": "The two pledges of ʿAqaba, then the emigration."
+    },
+    "g12": {
+      "title": "Establishment of the Muslim community",
+      "range": "1 AH – 622 / 623 CE",
+      "intro": "The mosque, the brotherhood and the organisation of the community."
+    },
+    "g13": {
+      "title": "Major Medinan events and battles",
+      "range": "2 – 5 AH / 624 – 627 CE",
+      "intro": "Badr, Uḥud and the Trench."
+    },
+    "g14": {
+      "title": "The Treaty of al-Ḥudaybiya and its aftermath",
+      "range": "6 – 7 AH / 628 CE",
+      "intro": "The treaty, then the campaign of Khaybar."
+    },
+    "g15": {
+      "title": "The Conquest of Makkah",
+      "range": "8 AH / 629 – 630 CE",
+      "intro": "Muʾta, then the Conquest of Makkah, then Ḥunayn."
+    },
+    "g16": {
+      "title": "Tabūk and the Farewell Pilgrimage",
+      "range": "9 – 10 AH / 630 – 632 CE",
+      "intro": "The expedition to Tabūk, then the Farewell Pilgrimage."
+    },
+    "g17": {
+      "title": "The final illness and death of the Prophet ﷺ",
+      "range": "Rabīʿ al-Awwal 11 AH – 632 CE",
+      "intro": "The Prophet’s ﷺ illness and death."
+    }
+  }
+}

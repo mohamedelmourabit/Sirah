@@ -2,13 +2,13 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useApp } from './ctx'
 import { KIND_COLOR } from './data'
-import { Badge } from './Timeline'
-import { TrPill, TrTag, VerifyBox } from './status'
+import { Badge, TimelineInfo } from './Timeline'
+import { IncTag, TrPill, TrTag, VerifyBox } from './status'
 import { hasBio } from './bio'
 
 export default function Detail({ onClose }: { onClose: () => void }) {
   const { t, i18n } = useTranslation()
-  const { sel, byId, orig, open, go, readBio } = useApp()
+  const { sel, byId, orig, open, go, readBio, all } = useApp()
   const [showAr, setShowAr] = useState(false)
   useEffect(() => setShowAr(false), [sel]) // each entity opens on the translation again
   const tr = sel ? byId.get(sel) : null
@@ -47,6 +47,7 @@ export default function Detail({ onClose }: { onClose: () => void }) {
         <p className="mt-2 text-slate-200" {...ar}>{e.summary}</p>
 
         <VerifyBox e={e} ar={ar} />
+        <TimelineInfo e={e} />
 
         <h3 className="mb-1 mt-5 text-sm font-semibold text-gold">{t('detail.bio')}</h3>
         <p className="leading-8 text-slate-300" {...ar}>{e.bio}</p>
@@ -54,13 +55,14 @@ export default function Detail({ onClose }: { onClose: () => void }) {
         <p className="leading-8 text-slate-300" {...ar}>{e.context}</p>
 
         <h3 className="mb-2 mt-5 text-sm font-semibold text-gold">{t('detail.sources')}</h3>
+        <p className="mb-2 text-[11px] text-amber-200/80" dir="auto">{t('detail.incompleteNote')}</p>
         <ul className="list-disc space-y-1 ps-5 text-sm text-slate-300" {...ar}>
-          {e.sources.map(([t, r]) => <li key={t + r}><b>{t}</b> — {r}</li>)}
+          {e.sources.map(([t, r], i) => { const o = orig.get(e.id)?.sources[i] ?? [t, r]; return <li key={t + r}><b>{t}</b> — {r}<IncTag work={o[0]} locator={o[1]} /></li> })}
         </ul>
 
         <h3 className="mb-2 mt-5 text-sm font-semibold text-gold">{t('detail.related')}</h3>
         <div className="flex flex-wrap gap-2">
-          {e.rel.map((r) => byId.get(r)).filter(Boolean).map((r) => (
+          {all.filter((r) => r.id !== e.id && (e.rel.includes(r.id) || r.rel.includes(e.id))).map((r) => byId.get(r.id)).filter(Boolean).map((r) => (
             <button key={r!.id} onClick={() => (hasBio(r!.id) ? readBio(r!.id) : open(r!.id))} className="flex items-center gap-1.5 rounded-full border border-line px-3 py-1 text-xs hover:border-gold">
               <i className="size-2 rounded-full" style={{ background: KIND_COLOR[r!.kind] }} />{r!.name}<TrTag e={r!} />
             </button>

@@ -11,7 +11,7 @@ let bad = 0
 const err = (m) => { bad++; console.error('✗', m) }
 
 const ar = new Set(flat(J('ar')).map(strip))
-const VS = ['VERIFIED', 'DISPUTED', 'UNCERTAIN', 'PENDING_REVIEW']
+const VS = ['VERIFIED', 'IN_REVIEW', 'NEEDS_REVISION', 'PENDING_REVIEW', 'DISPUTED', 'UNCERTAIN'] // DISPUTED/UNCERTAIN = legacy
 const checkVerification = (l, i, v) => {
   if (!v) return err(`${l}/${i}: missing verification (defaults to PENDING_REVIEW at runtime, but add it explicitly)`)
   if (!VS.includes(v.status)) err(`${l}/${i}: verification.status must be one of ${VS.join('|')}`)

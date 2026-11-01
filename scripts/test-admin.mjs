@@ -17,7 +17,8 @@ const REF = JSON.stringify([{ title: 'Sahih al-Bukhari', ref: 'Book of Maghazi' 
 const tr = (e = 'badr', l = 'fr') => row('select * from entity_translations where entity_id=$1 and lang=$2', e, l)
 const ver = (e = 'badr', l = 'fr') => row('select * from entity_verification where entity_id=$1 and lang=$2', e, l)
 
-before(async () => { db = await makeDb() })
+let N
+before(async () => { db = await makeDb(); N = Number((await db.query('select count(*)::int c from entities')).rows[0].c) })
 
 test('access: anon and signed-in non-reviewers can neither call the editorial functions nor read staff data', async () => {
   for (const who of [null, 'outsider']) {
@@ -38,7 +39,7 @@ test('roles: an editor can save/submit but cannot approve, reject or verify; sta
   assert.equal((await tr()).translation_status, 'submitted')
   await rejects(call('editor', 'review_translation', 'badr', 'fr', 'approve', null), /not authorized/)
   await rejects(call('editor', 'set_verification', 'badr', 'fr', 'VERIFIED', REF, null), /not authorized/)
-  assert.equal((await as(db, U.editor, 'select * from entity_translations')).rows.length, 120) // staff see drafts
+  assert.equal((await as(db, U.editor, 'select * from entity_translations')).rows.length, N * 3) // staff see drafts
   assert.ok((await as(db, U.editor, 'select * from review_log')).rows.length >= 2)
   assert.equal((await as(db, U.editor, 'select * from reviewers')).rows.length, 1) // only own row
 })
@@ -122,9 +123,9 @@ test('RLS: no client (editor, reviewer, anon) can write tables directly; fields 
   assert.equal(Number((await row("select count(*)::int c from entity_translations where translation_status='reviewed'")).c), 1) // only uhud (badr was edited)
 })
 
-test('public data path unchanged: anon reads entities, verification (160), and only reviewed translations', async () => {
-  assert.equal((await as(db, null, 'select * from entities')).rows.length, 40)
-  assert.equal((await as(db, null, 'select * from entity_verification')).rows.length, 160)
+test('public data path unchanged: anon reads entities, verification (4 per entity), and only reviewed translations', async () => {
+  assert.equal((await as(db, null, 'select * from entities')).rows.length, N)
+  assert.equal((await as(db, null, 'select * from entity_verification')).rows.length, N * 4)
   assert.ok((await as(db, null, 'select * from entity_translations')).rows.every((r) => r.translation_status === 'reviewed'))
 })
 

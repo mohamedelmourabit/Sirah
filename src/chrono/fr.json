@@ -1,0 +1,95 @@
+{
+  "translation": {
+    "status": "draft"
+  },
+  "verification": {
+    "status": "PENDING_REVIEW"
+  },
+  "groups": {
+    "g1": {
+      "title": "L’Arabie avant la naissance du Prophète",
+      "range": "Avant 570",
+      "intro": "La société tribale, les Quraych, La Mecque et l’Année de l’Éléphant."
+    },
+    "g2": {
+      "title": "Naissance et enfance",
+      "range": "570 – environ 578",
+      "intro": "La naissance, l’orphelinat et la tutelle."
+    },
+    "g3": {
+      "title": "Jeunesse et débuts de la vie",
+      "range": "Environ 580 – 595",
+      "intro": "Le pastoralisme, le commerce et la réputation de loyauté."
+    },
+    "g4": {
+      "title": "Le mariage avec Khadīja",
+      "range": "Environ 595 – 605",
+      "intro": "Le mariage, puis la reconstruction de la Kaʿba avant la mission."
+    },
+    "g5": {
+      "title": "La première révélation",
+      "range": "Ramaḍān – environ 610",
+      "intro": "La révélation dans la grotte de Ḥirāʾ."
+    },
+    "g6": {
+      "title": "Les premières années de l’islam à La Mecque",
+      "range": "Environ 610 – 613",
+      "intro": "L’appel discret et les premiers musulmans."
+    },
+    "g7": {
+      "title": "La prédication publique et la persécution",
+      "range": "À partir d’environ 613",
+      "intro": "L’appel public et les violences contre les musulmans."
+    },
+    "g8": {
+      "title": "L’émigration en Abyssinie",
+      "range": "Environ 615",
+      "intro": "Le refuge des musulmans auprès du Négus."
+    },
+    "g9": {
+      "title": "Le boycott et l’Année de la tristesse",
+      "range": "Environ 616 – 619",
+      "intro": "Le boycott, la mort d’Abū Ṭālib et de Khadīja, et le voyage à Ṭāʾif."
+    },
+    "g10": {
+      "title": "Le Voyage nocturne et l’Ascension",
+      "range": "Avant l’Hégire",
+      "intro": "Le voyage d’al-Isrāʾ et d’al-Miʿrāj."
+    },
+    "g11": {
+      "title": "L’Hégire vers Médine",
+      "range": "621 – 622",
+      "intro": "Les deux serments d’al-ʿAqaba, puis l’émigration."
+    },
+    "g12": {
+      "title": "La fondation de la communauté musulmane",
+      "range": "1 de l’Hégire – 622 / 623",
+      "intro": "La mosquée, la fraternité et l’organisation de la communauté."
+    },
+    "g13": {
+      "title": "Grands événements et batailles de Médine",
+      "range": "2 – 5 de l’Hégire / 624 – 627",
+      "intro": "Badr, Uḥud et le Fossé."
+    },
+    "g14": {
+      "title": "Le traité d’al-Ḥudaybiya et ses suites",
+      "range": "6 – 7 de l’Hégire / 628",
+      "intro": "Le traité, puis l’expédition de Khaybar."
+    },
+    "g15": {
+      "title": "La conquête de La Mecque",
+      "range": "8 de l’Hégire / 629 – 630",
+      "intro": "Muʾta, puis la conquête de La Mecque, puis Ḥunayn."
+    },
+    "g16": {
+      "title": "Tabūk et le Pèlerinage d’adieu",
+      "range": "9 – 10 de l’Hégire / 630 – 632",
+      "intro": "L’expédition de Tabūk, puis le Pèlerinage d’adieu."
+    },
+    "g17": {
+      "title": "La dernière maladie et la mort du Prophète ﷺ",
+      "range": "Rabīʿ al-Awwal 11 de l’Hégire – 632",
+      "intro": "La maladie et la mort du Prophète ﷺ."
+    }
+  }
+}

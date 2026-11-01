@@ -48,7 +48,7 @@ for (const [id, { def }] of Object.entries(BIOS)) {
     for (const t of [p.title, p.subtitle, ...Object.values(p.claims), ...Object.values(p.sections), ...Object.values(p.facts).flatMap((x) => [x.label, x.value]), ...Object.values(p.journey).flatMap((x) => [x.label, x.when])]) assert.ok(t && t.trim(), `${f}: empty text`)
     for (const t of Object.values(p.claims)) assert.equal(AR.test(t), l === 'ar', `${f}: wrong script in a claim: ${t.slice(0, 40)}`)
     // review state: never auto-approved; PENDING_REVIEW unless a named reviewer + date exist
-    const v = p.verification ?? {}; assert.ok(['VERIFIED', 'DISPUTED', 'UNCERTAIN', 'PENDING_REVIEW'].includes(v.status), `${f}: verification`)
+    const v = p.verification ?? {}; assert.ok(['VERIFIED', 'IN_REVIEW', 'NEEDS_REVISION', 'PENDING_REVIEW', 'DISPUTED', 'UNCERTAIN'].includes(v.status), `${f}: verification`)
     if (v.status !== 'PENDING_REVIEW') assert.ok(v.reviewed_by && v.reviewed_at, `${f}: ${v.status} needs reviewer + date`)
     if (l === 'ar') assert.ok(!p.translation, `${f}: the Arabic original has no translation status`)
     else { assert.ok(['draft', 'reviewed'].includes(p.translation?.status), `${f}: translation.status`); if (p.translation.status === 'reviewed') assert.ok(p.translation.reviewed_by && p.translation.reviewed_at, `${f}: reviewed needs reviewer + date`) }
